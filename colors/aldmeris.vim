@@ -17,17 +17,17 @@ let g:colors_name = "aldmeris"
 
 "GUI Colors
 hi Normal       guifg=#d3d7cf guibg=#2e3436
-hi Cursor		guibg=#d3d7cf guifg=#000000
-hi CursorLine	guibg=#555753
-hi CursorColumn	guibg=#464646
-hi MatchParen	guibg=#ad7fa8 guifg=#FFFFFF
+hi Cursor       guibg=#d3d7cf guifg=#000000
+hi CursorLine   guibg=#555753
+hi CursorColumn guibg=#464646
+hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
 
-hi LineNr guibg=Black guifg=#555753
+hi LineNr       guibg=#000000 guifg=#555753
 
 " Invisible chracters
-hi NonText guifg=#555753
-hi SpecialKey guifg=#555753
+hi NonText      guifg=#555753
+hi SpecialKey   guifg=#555753
 
 " Pmenu
 hi Pmenu        guibg=#000000 guifg=#c0c0c0
