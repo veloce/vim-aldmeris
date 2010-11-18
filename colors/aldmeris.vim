@@ -22,8 +22,8 @@ hi CursorLine   guibg=#555753
 hi CursorColumn guibg=#464646
 hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
-
 hi LineNr       guibg=#000000 guifg=#555753
+hi Folded       guibg=NONE    guifg=#c3c7ca
 
 " Invisible chracters
 hi NonText      guifg=#555753
