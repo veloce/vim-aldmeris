@@ -74,9 +74,9 @@ hi link htmlH5 Normal
 hi link htmlH6 Normal
 
 " Jinja colors
-hi link jinjaTagDelim Statement
+hi link jinjaTagDelim Special
 hi link jinjaVarDelim jinjaTagDelim
-hi link jinjaFilter Special
+hi link jinjaFilter Function
 hi link jinjaString xmlString
 
 "PHP Colors
