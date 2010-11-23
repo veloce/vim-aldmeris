@@ -88,3 +88,16 @@ hi link phpSpecial Keyword
 hi link phpMemberSelector Keyword
 hi link phpBoolean Boolean
 hi link phpNumber Number
+
+" CSS Colors
+hi link cssIdentifier Normal
+hi link cssClassName Normal
+hi link cssBraces Normal
+hi link cssRenderProp Keyword
+hi link cssBoxProp cssRenderProp
+hi link cssColorProp cssRenderProp
+hi link cssFontProp cssRenderProp
+hi link cssTextProp cssRenderProp
+hi link cssGeneratedContentProp cssRenderProp
+hi link cssValueLength Boolean
+hi link cssPseudoClassId Identifier
