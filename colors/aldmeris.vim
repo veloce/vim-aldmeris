@@ -84,7 +84,7 @@ hi link phpVarSelector Identifier
 hi link phpIdentifier Identifier
 hi link phpParent Normal
 hi link phpFunctions Function
-hi link phpSpecial Keyword
+hi link phpSpecial Special
 hi link phpMemberSelector Keyword
 hi link phpBoolean Boolean
 hi link phpNumber Number
