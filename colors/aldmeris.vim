@@ -25,6 +25,9 @@ hi Visual       guibg=#888a85 guifg=#eeeeec
 hi LineNr       guibg=#000000 guifg=#555753
 hi Folded       guibg=NONE    guifg=#c3c7ca
 
+hi clear Search
+hi Search       guibg=#555753
+
 " Invisible chracters
 hi NonText      guifg=#555753
 hi SpecialKey   guifg=#555753
@@ -51,9 +54,6 @@ hi Special guifg=#fcaf3e
 hi Error guifg=#eeeeec guibg=#cc0000 gui=bold
 hi Todo guifg=#888a85 guibg=#fce94f gui=bold
 
-hi clear Search
-hi Search guibg=#555753
-
 " XML Colors
 hi link xmlTag Identifier
 hi link xmlEndTag xmlTag
@@ -74,8 +74,8 @@ hi link htmlH5 Normal
 hi link htmlH6 Normal
 
 " Jinja colors
-hi link jinjaTagDelim Special
-hi link jinjaVarDelim jinjaTagDelim
+hi link jinjaTagDelim Keyword
+hi link jinjaVarDelim Special
 hi link jinjaFilter Function
 hi link jinjaString xmlString
 
