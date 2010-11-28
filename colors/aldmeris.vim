@@ -73,6 +73,9 @@ hi link htmlH4 Normal
 hi link htmlH5 Normal
 hi link htmlH6 Normal
 
+" Javascript colors
+hi link javaScriptBraces normal
+
 " Jinja colors
 hi link jinjaTagDelim Special
 hi link jinjaVarDelim jinjaTagDelim
