@@ -16,7 +16,7 @@ endif
 let g:colors_name = "aldmeris"
 
 "GUI Colors
-hi Normal       guibg=#2e3436 guifg=#d3d7cf
+hi Normal       guibg=#1d1f1f guifg=#d3d7cf
 hi Cursor       guibg=#d3d7cf guifg=#000000
 hi CursorLine   guibg=#555753
 hi CursorColumn guibg=#464646
@@ -39,20 +39,20 @@ hi PmenuSbar    guibg=#444444 guifg=#444444
 hi PmenuThumb   guibg=#888888 guifg=#888888 
 
 "General Colors
-hi Comment guifg=#888a85 gui=italic
-hi Constant guifg=#fce94f
-hi String guifg=#edd400
-hi Boolean guifg=#ce5c00
+hi Comment      guibg=NONE    guifg=#888a85 gui=italic
+hi Constant     guibg=NONE    guifg=#fce94f
+hi String       guibg=NONE    guifg=#edd400
+hi Boolean      guibg=NONE    guifg=#ce5c00
 
-hi Identifier guifg=#729fcf gui=NONE
-hi Function guifg=#f57900
-hi Statement guifg=#eeeeec gui=bold
-hi PreProc guifg=#ad7fa8
-hi Type guifg=#8ae234 gui=bold
-hi Special guifg=#fcaf3e
+hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
+hi Function     guibg=NONE    guifg=#f57900
+hi Statement    guibg=NONE    guifg=#eeeeec gui=bold
+hi PreProc      guibg=NONE    guifg=#ad7fa8
+hi Type         guibg=NONE    guifg=#8ae234 gui=bold
+hi Special      guibg=NONE    guifg=#fcaf3e
 
-hi Error guifg=#eeeeec guibg=#cc0000 gui=bold
-hi Todo guifg=#888a85 guibg=#fce94f gui=bold
+hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
+hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
 
 " XML Colors
 hi link xmlTag Identifier
