@@ -5,7 +5,6 @@
 " Name:         aldmeris.vim
 " Maintainer:   Vincent Velociter
 " License:      Public license
-" Version:      0.1
 
 set background=dark
 hi clear
@@ -18,15 +17,15 @@ let g:colors_name = "aldmeris"
 "GUI Colors
 hi Normal       guibg=#2e3436 guifg=#d3d7cf
 hi Cursor       guibg=#d3d7cf guifg=#000000
-hi CursorLine   guibg=#555753
-hi CursorColumn guibg=#464646
+hi CursorLine   guibg=#555753 guifg=NONE
+hi CursorColumn guibg=#464646 guifg=NONE
 hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
 hi LineNr       guibg=#000000 guifg=#555753
 hi Folded       guibg=NONE    guifg=#c3c7ca
 
 hi clear Search
-hi Search       guibg=#555753
+hi Search       guibg=#4e9a06 guifg=#eeeeec
 
 " Invisible chracters
 hi NonText      guifg=#555753
