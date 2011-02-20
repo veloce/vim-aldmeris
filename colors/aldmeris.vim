@@ -31,11 +31,16 @@ hi Search       guibg=#4e9a06 guifg=#eeeeec
 hi NonText      guifg=#555753
 hi SpecialKey   guifg=#555753
 
-" Pmenu
 hi Pmenu        guibg=#000000 guifg=#c0c0c0
 hi PmenuSel     guibg=#555753 guifg=#ffffff
 hi PmenuSbar    guibg=#444444 guifg=#444444
 hi PmenuThumb   guibg=#888888 guifg=#888888 
+
+" Diff colors
+hi DiffAdd      guibg=#5c3566 guifg=#ad7fa8
+hi DiffChange   guibg=#3465a4 guifg=#729fcf
+hi DiffText     guibg=#4e9a06 guifg=#8ae234
+hi DiffDelete   guibg=#000000 guifg=#252723
 
 "General Colors
 hi Comment      guibg=NONE    guifg=#888a85 gui=italic
