@@ -14,6 +14,36 @@ endif
 
 let g:colors_name = "aldmeris"
 
+"  <!-- Tango Palette -->
+"  <color name="butter1"                 value="#fce94f"/>
+"  <color name="butter2"                 value="#edd400"/>
+"  <color name="butter3"                 value="#c4a000"/>
+"  <color name="chameleon1"              value="#8ae234"/>
+"  <color name="chameleon2"              value="#73d216"/>
+"  <color name="chameleon3"              value="#4e9a06"/>
+"  <color name="orange1"                 value="#fcaf3e"/>
+"  <color name="orange2"                 value="#f57900"/>
+"  <color name="orange3"                 value="#ce5c00"/>
+"  <color name="skyblue1"                value="#729fcf"/>
+"  <color name="skyblue2"                value="#3465a4"/>
+"  <color name="skyblue3"                value="#204a87"/>
+"  <color name="plum1"                   value="#ad7fa8"/>
+"  <color name="plum2"                   value="#75507b"/>
+"  <color name="plum3"                   value="#5c3566"/>
+"  <color name="chocolate1"              value="#e9b96e"/>
+"  <color name="chocolate2"              value="#c17d11"/>
+"  <color name="chocolate3"              value="#8f5902"/>
+"  <color name="scarletred1"             value="#ef2929"/>
+"  <color name="scarletred2"             value="#cc0000"/>
+"  <color name="scarletred3"             value="#a40000"/>
+"  <color name="aluminium1"              value="#eeeeec"/>
+"  <color name="aluminium2"              value="#d3d7cf"/>
+"  <color name="aluminium3"              value="#babdb6"/>
+"  <color name="aluminium4"              value="#888a85"/>
+"  <color name="aluminium5"              value="#555753"/>
+"  <color name="aluminium6"              value="#2e3436"/>
+"
+
 "GUI Colors
 hi Normal       guibg=#2e3436 guifg=#d3d7cf
 hi Cursor       guibg=#d3d7cf guifg=#000000
@@ -23,7 +53,7 @@ hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
 hi LineNr       guibg=#000000 guifg=#555753
 hi Folded       guibg=NONE    guifg=#e9b96e
-hi Directory    guibg=NONE    guifg=#729fcf
+hi Directory    guibg=NONE    guifg=#729fcf gui=bold
 hi clear Search
 hi Search       guibg=#4e9a06 guifg=#eeeeec
 
