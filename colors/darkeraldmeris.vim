@@ -58,8 +58,8 @@ hi clear Search
 hi Search       guibg=#4e9a06 guifg=#eeeeec
 
 " Invisible chracters
-hi NonText      guifg=#555753
-hi SpecialKey   guifg=#555753
+hi NonText      guibg=NONE    guifg=#2e3436
+hi SpecialKey   guibg=NONE    guifg=#2e3436
 
 hi Pmenu        guibg=#000000 guifg=#c0c0c0
 hi PmenuSel     guibg=#555753 guifg=#ffffff
