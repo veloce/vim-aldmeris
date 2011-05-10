@@ -52,7 +52,7 @@ hi CursorColumn guibg=#464646 guifg=NONE
 hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
 hi LineNr       guibg=#000000 guifg=#555753
-hi Folded       guibg=NONE    guifg=#e9b96e
+hi Folded       guibg=NONE    guifg=#babdb6 gui=bold,underline
 hi Directory    guibg=NONE    guifg=#729fcf gui=bold
 hi clear Search
 hi Search       guibg=#4e9a06 guifg=#eeeeec
