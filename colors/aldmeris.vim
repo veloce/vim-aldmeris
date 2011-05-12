@@ -77,8 +77,7 @@ hi DiffText     guibg=#4e9a06 guifg=#8ae234
 " ------------------
 " :help group-name
 hi Comment      guibg=NONE    guifg=#888a85 gui=italic
-hi Constant     guibg=NONE    guifg=#fce94f
-hi String       guibg=NONE    guifg=#edd400
+hi Constant     guibg=NONE    guifg=#edd400
 hi Boolean      guibg=NONE    guifg=#ce5c00
 
 hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
