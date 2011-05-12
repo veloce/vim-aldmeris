@@ -80,12 +80,11 @@ hi String       guibg=NONE    guifg=#edd400
 hi Boolean      guibg=NONE    guifg=#ce5c00
 
 hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
-hi Function     guibg=NONE    guifg=#f57900
 
 hi Statement    guibg=NONE    guifg=#eeeeec gui=bold
 hi PreProc      guibg=NONE    guifg=#ad7fa8
 hi Type         guibg=NONE    guifg=#8ae234 gui=bold
-hi Special      guibg=NONE    guifg=#fcaf3e
+hi Special      guibg=NONE    guifg=#f57900
 
 hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
 hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
