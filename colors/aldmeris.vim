@@ -1,10 +1,12 @@
 " Vim color scheme
-" A port of the gedit oblivion theme for vim
-" Original author: Paolo Borelli <pborelli@gnome.org>
-"
 " Name:         aldmeris.vim
-" Maintainer:   Vincent Velociter
-" License:      Public license
+" Maintainer:   Vincent Velociter <vincent.velociter@gmail.com>
+" Url:          https://github.com/veloce/vim-aldmeris
+" License:      LGPL
+
+" A port of the gedit oblivion theme for vim
+" The original theme is part of GtkSourceView
+" Original author: Paolo Borelli <pborelli@gnome.org>
 
 set background=dark
 hi clear
