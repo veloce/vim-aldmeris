@@ -89,6 +89,13 @@ hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
 " }}}
 " gitcommit colors {{{
 " ----------------
+hi link gitcommitComment   Comment
+hi link gitcommitHeader    gitcommitComment
+hi link gitcommitUntracked gitcommitComment
+hi link gitcommitDiscarded gitcommitComment
+hi link gitcommitSelected  gitcommitComment
+hi diffFile                guibg=NONE guifg=#e9b96e
+hi link diffNewFile diffFile
 hi gitcommitDiscardedType  guibg=NONE guifg=#ef2929
 hi gitcommitSelectedType   guibg=NONE guifg=#8ae234
 hi gitcommitUnmergedType   guibg=NONE guifg=#fce94f
