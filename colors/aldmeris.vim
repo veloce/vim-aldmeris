@@ -68,10 +68,10 @@ hi PmenuThumb   guibg=#888888 guifg=#888888
 " }}}
 " Diff colors {{{
 " -----------
-hi DiffAdd      guibg=#5c3566 guifg=#ad7fa8
-hi DiffDelete   guibg=#000000 guifg=#252723
-hi DiffChange   guibg=#3465a4 guifg=#729fcf
-hi DiffText     guibg=#4e9a06 guifg=#8ae234
+hi DiffAdd      guibg=#555753 guifg=#8ae234 gui=bold
+hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
+hi DiffChange   guibg=#555753 guifg=#fce94f gui=bold
+hi DiffText     guibg=#555753 guifg=#729fcf gui=bold
 " }}}
 " Group names colors {{{
 " ------------------
