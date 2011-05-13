@@ -87,6 +87,15 @@ hi Special      guibg=NONE    guifg=#f57900
 hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
 hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
 " }}}
+" gitcommit colors {{{
+" ----------------
+hi gitcommitDiscardedType  guibg=NONE guifg=#ef2929
+hi gitcommitSelectedType   guibg=NONE guifg=#8ae234
+hi gitcommitUnmergedType   guibg=NONE guifg=#fce94f
+hi gitcommitDiscardedFile  guibg=NONE guifg=#ef2929 gui=bold
+hi gitcommitSelectedFile   guibg=NONE guifg=#8ae234 gui=bold
+hi gitcommitUnmergedFile   guibg=NONE guifg=#fce94f gui=bold
+" }}}
 " XML Colors {{{
 " ----------
 hi link xmlTag Identifier
