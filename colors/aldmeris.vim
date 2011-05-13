@@ -51,7 +51,7 @@ let g:colors_name = "aldmeris"
 hi Normal       guibg=#2e3436 guifg=#d3d7cf
 hi Cursor       guibg=#d3d7cf guifg=#000000
 hi CursorLine   guibg=#555753 guifg=NONE
-hi CursorColumn guibg=#464646 guifg=NONE
+hi CursorColumn guibg=#555753 guifg=NONE
 hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
 hi Visual       guibg=#888a85 guifg=#eeeeec
 hi LineNr       guibg=#000000 guifg=#555753
@@ -65,9 +65,6 @@ hi Pmenu        guibg=#000000 guifg=#c0c0c0
 hi PmenuSel     guibg=#555753 guifg=#ffffff
 hi PmenuSbar    guibg=#444444 guifg=#444444
 hi PmenuThumb   guibg=#888888 guifg=#888888 
-" }}}
-" Diff colors {{{
-" -----------
 hi DiffAdd      guibg=#555753 guifg=#8ae234 gui=bold
 hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
 hi DiffChange   guibg=#555753 guifg=#fce94f gui=bold
