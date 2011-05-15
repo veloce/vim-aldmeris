@@ -18,33 +18,33 @@ let g:colors_name = "aldmeris"
 
 " Tango Palette {{{
 " -------------
-" color name="butter1"                 value="#fce94f"
-" color name="butter2"                 value="#edd400"
-" color name="butter3"                 value="#c4a000"
-" color name="chameleon1"              value="#8ae234"
-" color name="chameleon2"              value="#73d216"
-" color name="chameleon3"              value="#4e9a06"
-" color name="orange1"                 value="#fcaf3e"
-" color name="orange2"                 value="#f57900"
-" color name="orange3"                 value="#ce5c00"
-" color name="skyblue1"                value="#729fcf"
-" color name="skyblue2"                value="#3465a4"
-" color name="skyblue3"                value="#204a87"
-" color name="plum1"                   value="#ad7fa8"
-" color name="plum2"                   value="#75507b"
-" color name="plum3"                   value="#5c3566"
-" color name="chocolate1"              value="#e9b96e"
-" color name="chocolate2"              value="#c17d11"
-" color name="chocolate3"              value="#8f5902"
-" color name="scarletred1"             value="#ef2929"
-" color name="scarletred2"             value="#cc0000"
-" color name="scarletred3"             value="#a40000"
-" color name="aluminium1"              value="#eeeeec"
-" color name="aluminium2"              value="#d3d7cf"
-" color name="aluminium3"              value="#babdb6"
-" color name="aluminium4"              value="#888a85"
-" color name="aluminium5"              value="#555753"
-" color name="aluminium6"              value="#2e3436"
+" butter1      #fce94f
+" butter2      #edd400
+" butter3      #c4a000
+" chameleon1   #8ae234
+" chameleon2   #73d216
+" chameleon3   #4e9a06
+" orange1      #fcaf3e
+" orange2      #f57900
+" orange3      #ce5c00
+" skyblue1     #729fcf
+" skyblue2     #3465a4
+" skyblue3     #204a87
+" plum1        #ad7fa8
+" plum2        #75507b
+" plum3        #5c3566
+" chocolate1   #e9b96e
+" chocolate2   #c17d11
+" chocolate3   #8f5902
+" scarletred1  #ef2929
+" scarletred2  #cc0000
+" scarletred3  #a40000
+" aluminium1   #eeeeec
+" aluminium2   #d3d7cf
+" aluminium3   #babdb6
+" aluminium4   #888a85
+" aluminium5   #555753
+" aluminium6   #2e3436
 " }}}
 " Vim colors {{{
 " ----------
