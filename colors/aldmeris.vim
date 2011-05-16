@@ -48,14 +48,13 @@ let g:colors_name = "aldmeris"
 " aluminium5   #555753    59  #5f5f5f
 " aluminium6   #2e3436    0   #2e3436
 " }}}
-" Aldmeris colors {{{
+" Aldmeris color {{{
 "  Name        Gui        xterm/hex
 " -----------  --------   -----------
 " butter1      #fce94f    11  #fce94f
 " butter2      #edd400    220 #ffd700
 " chameleon1   #8ae234    10  #8ae234
 " chameleon3   #4e9a06    2   #4e9a06
-" orange2      #f57900    208 #ff8700
 " orange3      #ce5c00    166 #d75f00
 " skyblue1     #729fcf    12  #729fcf
 " plum1        #ad7fa8    13  #ad7fa8
@@ -105,7 +104,7 @@ hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
 hi Statement    guibg=NONE    guifg=#eeeeec gui=bold
 hi PreProc      guibg=NONE    guifg=#ad7fa8
 hi Type         guibg=NONE    guifg=#8ae234 gui=bold
-hi Special      guibg=NONE    guifg=#f57900
+hi Special      guibg=NONE    guifg=#ce5c00
 
 hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
 hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
