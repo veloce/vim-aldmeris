@@ -26,7 +26,7 @@ let g:colors_name = "aldmeris"
 " chameleon1   #8ae234    10  #8ae234
 " chameleon2   #73d216    76  #5fd700
 " chameleon3   #4e9a06    2   #4e9a06
-" orange1      #fcaf3e    11  #fce94f
+" orange1      #fcaf3e    215 #ffaf5f
 " orange2      #f57900    208 #ff8700
 " orange3      #ce5c00    166 #d75f00
 " skyblue1     #729fcf    12  #729fcf
