@@ -18,33 +18,33 @@ let g:colors_name = "aldmeris"
 
 " Tango Palette {{{
 " -------------
-" butter1      #fce94f
-" butter2      #edd400
-" butter3      #c4a000
-" chameleon1   #8ae234
-" chameleon2   #73d216
-" chameleon3   #4e9a06
-" orange1      #fcaf3e
-" orange2      #f57900
-" orange3      #ce5c00
-" skyblue1     #729fcf
-" skyblue2     #3465a4
-" skyblue3     #204a87
-" plum1        #ad7fa8
-" plum2        #75507b
-" plum3        #5c3566
-" chocolate1   #e9b96e
-" chocolate2   #c17d11
-" chocolate3   #8f5902
-" scarletred1  #ef2929
-" scarletred2  #cc0000
-" scarletred3  #a40000
-" aluminium1   #eeeeec
-" aluminium2   #d3d7cf
-" aluminium3   #babdb6
-" aluminium4   #888a85
-" aluminium5   #555753
-" aluminium6   #2e3436
+" butter1      #fce94f | 11  | #fce94f
+" butter2      #edd400 | 220 | #ffd700
+" butter3      #c4a000 | 3   | #c4a000
+" chameleon1   #8ae234 | 10  | #8ae234
+" chameleon2   #73d216 | 76  | #5fd700
+" chameleon3   #4e9a06 | 2   | #4e9a06
+" orange1      #fcaf3e | 11  | #fce94f
+" orange2      #f57900 | 208 | #ff8700
+" orange3      #ce5c00 | 166 | #d75f00
+" skyblue1     #729fcf | 12  | #729fcf
+" skyblue2     #3465a4 | 4   | #3465a4
+" skyblue3     #204a87 | 24  | #005f87
+" plum1        #ad7fa8 | 13  | #ad7fa8
+" plum2        #75507b | 5   | #75507b
+" plum3        #5c3566 | 239 | #5f5f87
+" chocolate1   #e9b96e | 179 | #d7af5f
+" chocolate2   #c17d11 | 136 | #af8700
+" chocolate3   #8f5902 | 94  | #875f00
+" scarletred1  #ef2929 | 9   | #ef2929
+" scarletred2  #cc0000 | 1   | #cc0000
+" scarletred3  #a40000 | 124 | #af0000
+" aluminium1   #eeeeec | 15  | #eeeeec
+" aluminium2   #d3d7cf | 7   | #d3d7cf
+" aluminium3   #babdb6 | 250 | #bcbcbc
+" aluminium4   #888a85 | 102 | #878787
+" aluminium5   #555753 | 59  | #5f5f5f
+" aluminium6   #2e3436 | 0   | #2e3436
 " }}}
 " Vim colors {{{
 " ----------
