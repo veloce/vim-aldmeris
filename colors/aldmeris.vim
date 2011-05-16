@@ -67,6 +67,7 @@ let g:colors_name = "aldmeris"
 " aluminium4   #888a85    102 #878787
 " aluminium5   #555753    59  #5f5f5f
 " aluminium6   #2e3436    0   #2e3436
+" black        #000000    16  #000000
 " }}}
 " Highlight default (:h highlight-default) {{{
 " ----------
@@ -99,7 +100,7 @@ hi Folded       guibg=NONE    guifg=#babdb6 gui=bold,underline
 " LineNr		Line number for ":number" and ":#" commands, and when 'number'or 'relativenumber' option is set.
 hi LineNr       guibg=#000000 guifg=#555753
 " MatchParen	The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
+hi MatchParen   guibg=#ad7fa8 guifg=#eeeecc
 " ModeMsg		'showmode' message (e.g., "-- INSERT --")
 " MoreMsg		|more-prompt|
 " NonText		'~' and '@' at the end of the window, characters from
@@ -112,7 +113,7 @@ hi Normal       guibg=#2e3436 guifg=#d3d7cf
 " Pmenu		Popup menu: normal item.
 hi Pmenu        guibg=#000000 guifg=#c0c0c0
 " PmenuSel	Popup menu: selected item.
-hi PmenuSel     guibg=#555753 guifg=#ffffff
+hi PmenuSel     guibg=#555753 guifg=#eeeecc
 " PmenuSbar	Popup menu: scrollbar.
 hi PmenuSbar    guibg=#444444 guifg=#444444
 " PmenuThumb	Popup menu: Thumb of the scrollbar.
@@ -123,7 +124,7 @@ hi Search       guibg=#4e9a06 guifg=#eeeeec
 " 		Also used for highlighting the current line in the quickfix
 " 		window and similar items that need to stand out.
 " SpecialKey	Meta and special keys listed with ":map", also for text used
-hi SpecialKey   guifg=#555753
+hi SpecialKey   guibg=NONE    guifg=#555753
 " 		to show unprintable characters in the text, 'listchars'.
 " 		Generally: text that is displayed differently from what it
 " 		really is.
