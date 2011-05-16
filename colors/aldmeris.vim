@@ -86,7 +86,7 @@ hi SpecialKey   guifg=#555753
 hi Pmenu        guibg=#000000 guifg=#c0c0c0
 hi PmenuSel     guibg=#555753 guifg=#ffffff
 hi PmenuSbar    guibg=#444444 guifg=#444444
-hi PmenuThumb   guibg=#888888 guifg=#888888 
+hi PmenuThumb   guibg=#888a85 guifg=#888a85
 hi DiffAdd      guibg=#555753 guifg=#8ae234 gui=bold
 hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
 hi DiffChange   guibg=#555753 guifg=#fce94f gui=bold
@@ -96,6 +96,7 @@ hi DiffText     guibg=#555753 guifg=#729fcf gui=bold
 " ------------------
 " :help group-name
 hi Comment      guibg=NONE    guifg=#888a85 gui=italic
+
 hi Constant     guibg=NONE    guifg=#edd400
 hi Boolean      guibg=NONE    guifg=#ce5c00
 
