@@ -68,29 +68,89 @@ let g:colors_name = "aldmeris"
 " aluminium5   #555753    59  #5f5f5f
 " aluminium6   #2e3436    0   #2e3436
 " }}}
-" Vim colors {{{
+" Highlight default (:h highlight-default) {{{
 " ----------
-hi Normal       guibg=#2e3436 guifg=#d3d7cf
+" ColorColumn	used for the columns set with 'colorcolumn'
+" Conceal		placeholder characters substituted for concealed
+" Cursor		the character under the cursor
 hi Cursor       guibg=#d3d7cf guifg=#000000
-hi CursorLine   guibg=#555753 guifg=NONE
+" CursorIM	like Cursor, but used when in IME mode
+" CursorColumn	the screen column that the cursor is in when 'cursorcolumn' is set
 hi CursorColumn guibg=#555753 guifg=NONE
-hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
-hi Visual       guibg=#888a85 guifg=#eeeeec
-hi LineNr       guibg=#000000 guifg=#555753
-hi Folded       guibg=NONE    guifg=#babdb6 gui=bold,underline
+" CursorLine	the screen line that the cursor is in when 'cursorline' is set
+hi CursorLine   guibg=#555753 guifg=NONE
+" Directory	directory names (and other special names in listings)
 hi Directory    guibg=NONE    guifg=#729fcf gui=bold
-hi clear Search
-hi Search       guibg=#4e9a06 guifg=#eeeeec
-hi NonText      guifg=#555753
-hi SpecialKey   guifg=#555753
-hi Pmenu        guibg=#000000 guifg=#c0c0c0
-hi PmenuSel     guibg=#555753 guifg=#ffffff
-hi PmenuSbar    guibg=#444444 guifg=#444444
-hi PmenuThumb   guibg=#888a85 guifg=#888a85
+" DiffAdd		diff mode: Added line
 hi DiffAdd      guibg=#555753 guifg=#8ae234 gui=bold
-hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
+" DiffChange	diff mode: Changed line
 hi DiffChange   guibg=#555753 guifg=#fce94f gui=bold
+" DiffDelete	diff mode: Deleted line
+hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
+" DiffText	diff mode: Changed text within a changed line
 hi DiffText     guibg=#555753 guifg=#729fcf gui=bold
+" ErrorMsg	error messages on the command line
+" VertSplit	the column separating vertically split windows
+" Folded		line used for closed folds
+hi Folded       guibg=NONE    guifg=#babdb6 gui=bold,underline
+" FoldColumn	'foldcolumn'
+" SignColumn	column where |signs| are displayed
+" IncSearch	'incsearch' highlighting; also used for the text replaced with ":s///c"
+" LineNr		Line number for ":number" and ":#" commands, and when 'number'or 'relativenumber' option is set.
+hi LineNr       guibg=#000000 guifg=#555753
+" MatchParen	The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+hi MatchParen   guibg=#ad7fa8 guifg=#FFFFFF
+" ModeMsg		'showmode' message (e.g., "-- INSERT --")
+" MoreMsg		|more-prompt|
+" NonText		'~' and '@' at the end of the window, characters from
+hi NonText      guifg=#555753
+" 		'showbreak' and other characters that do not really exist in
+" 		the text (e.g., ">" displayed when a double-wide character
+" 		doesn't fit at the end of the line).
+" Normal		normal text
+hi Normal       guibg=#2e3436 guifg=#d3d7cf
+" Pmenu		Popup menu: normal item.
+hi Pmenu        guibg=#000000 guifg=#c0c0c0
+" PmenuSel	Popup menu: selected item.
+hi PmenuSel     guibg=#555753 guifg=#ffffff
+" PmenuSbar	Popup menu: scrollbar.
+hi PmenuSbar    guibg=#444444 guifg=#444444
+" PmenuThumb	Popup menu: Thumb of the scrollbar.
+hi PmenuThumb   guibg=#888a85 guifg=#888a85
+" Question	|hit-enter| prompt and yes/no questions
+" Search		Last search pattern highlighting (see 'hlsearch').
+hi Search       guibg=#4e9a06 guifg=#eeeeec
+" 		Also used for highlighting the current line in the quickfix
+" 		window and similar items that need to stand out.
+" SpecialKey	Meta and special keys listed with ":map", also for text used
+hi SpecialKey   guifg=#555753
+" 		to show unprintable characters in the text, 'listchars'.
+" 		Generally: text that is displayed differently from what it
+" 		really is.
+" SpellBad	Word that is not recognized by the spellchecker. |spell|
+" 		This will be combined with the highlighting used otherwise.
+" SpellCap	Word that should start with a capital. |spell|
+" 		This will be combined with the highlighting used otherwise.
+" SpellLocal	Word that is recognized by the spellchecker as one that is
+" 		used in another region. |spell|
+" 		This will be combined with the highlighting used otherwise.
+" SpellRare	Word that is recognized by the spellchecker as one that is
+" 		hardly ever used. |spell|
+" 		This will be combined with the highlighting used otherwise.
+" StatusLine	status line of current window
+" StatusLineNC	status lines of not-current windows
+" 		Note: if this is equal to "StatusLine" Vim will use "^^^" in
+" 		the status line of the current window.
+" TabLine		tab pages line, not active tab page label
+" TabLineFill	tab pages line, where there are no labels
+" TabLineSel	tab pages line, active tab page label
+" Title		titles for output from ":set all", ":autocmd" etc.
+" Visual		Visual mode selection
+hi Visual       guibg=#888a85 guifg=#eeeeec
+" VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
+" 		Only X11 Gui's |gui-x11| and |xterm-clipboard| supports this.
+" WarningMsg	warning messages
+" WildMenu	current match in 'wildmenu' completion
 " }}}
 " Group names colors {{{
 " ------------------
