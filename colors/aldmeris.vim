@@ -29,26 +29,26 @@ let g:colors_name = "aldmeris"
 "             #888a85 #555753 #2e3436
 " }}}
 " Aldmeris color {{{
-"  Name        Gui        xterm/hex
-" -----------  --------   -----------
-" butter1      #fce94f    11  #fce94f
-" butter2      #edd400    220 #ffd700
-" chameleon1   #8ae234    10  #8ae234
-" chameleon3   #4e9a06    2   #4e9a06
-" orange2      #f57900    208 #ff8700
-" orange3      #ce5c00    166 #d75f00
-" skyblue1     #729fcf    12  #729fcf
-" plum1        #ad7fa8    13  #ad7fa8
-" chocolate1   #e9b96e    179 #d7af5f
-" scarletred1  #ef2929    9   #ef2929
-" scarletred2  #cc0000    1   #cc0000
-" aluminium1   #eeeeec    15  #eeeeec
-" aluminium2   #d3d7cf    7   #d3d7cf
-" aluminium3   #babdb6    250 #bcbcbc
-" aluminium4   #888a85    102 #878787
-" aluminium5   #555753    59  #5f5f5f
-" aluminium6   #2e3436    0   #2e3436
-" black        #000000    16  #000000
+"  Name        Gui       xterm/hex
+" -----------  --------  -----------
+" butter1      #fce94f   11  #fce94f
+" butter2      #edd400   220 #ffd700
+" chameleon1   #8ae234   10  #8ae234
+" chameleon3   #4e9a06   2   #4e9a06
+" orange2      #f57900   208 #ff8700
+" orange3      #ce5c00   166 #d75f00
+" skyblue1     #729fcf   12  #729fcf
+" plum1        #ad7fa8   13  #ad7fa8
+" chocolate1   #e9b96e   179 #d7af5f
+" scarletred1  #ef2929   9   #ef2929
+" scarletred2  #cc0000   1   #cc0000
+" aluminium1   #eeeeec   15  #eeeeec
+" aluminium2   #d3d7cf   7   #d3d7cf
+" aluminium3   #babdb6   250 #bcbcbc
+" aluminium4   #888a85   102 #878787
+" aluminium5   #555753   8   #555753
+" aluminium6   #2e3436   0   #2e3436
+" black        #000000   16  #000000
 " }}}
 " Highlight default (:help highlight-default) {{{
 " ----------
