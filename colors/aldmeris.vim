@@ -54,34 +54,34 @@ let g:colors_name = "aldmeris"
 " ----------
 " ColorColumn	used for the columns set with 'colorcolumn'
 " Conceal		placeholder characters substituted for concealed
-hi Cursor       guibg=#d3d7cf guifg=#000000
+hi Cursor       guibg=#d3d7cf ctermbg=7 guifg=#000000 ctermfg=16
 " CursorIM	like Cursor, but used when in IME mode
-hi CursorColumn guibg=#555753 guifg=NONE
-hi CursorLine   guibg=#555753 guifg=NONE
-hi Directory    guibg=NONE    guifg=#729fcf gui=bold
-hi DiffAdd      guibg=#555753 guifg=#8ae234 gui=bold
-hi DiffChange   guibg=#555753 guifg=#fce94f gui=bold
-hi DiffDelete   guibg=#555753 guifg=#ef2929 gui=bold
-hi DiffText     guibg=#555753 guifg=#729fcf gui=bold
+hi CursorColumn guibg=#555753 ctermbg=8 guifg=NONE ctermfg=NONE cterm=NONE
+hi CursorLine   guibg=#555753 ctermbg=8 guifg=NONE ctermfg=NONE cterm=NONE
+hi Directory    guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=bold cterm=bold
+hi DiffAdd      guibg=#555753 ctermbg=8 guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
+hi DiffChange   guibg=#555753 ctermbg=8 guifg=#fce94f ctermfg=11 gui=bold cterm=bold
+hi DiffDelete   guibg=#555753 ctermbg=8 guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
+hi DiffText     guibg=#555753 ctermbg=8 guifg=#729fcf ctermfg=12 gui=bold cterm=bold
 " ErrorMsg	error messages on the command line
 " VertSplit	the column separating vertically split windows
-hi Folded       guibg=NONE    guifg=#babdb6 gui=bold,underline
+hi Folded       guibg=NONE ctermbg=NONE guifg=#babdb6 ctermfg=250 gui=bold,underline cterm=bold,underline
 " FoldColumn	'foldcolumn'
 " SignColumn	column where |signs| are displayed
 " IncSearch	'incsearch' highlighting;
-hi LineNr       guibg=#000000 guifg=#555753
-hi MatchParen   guibg=#ad7fa8 guifg=#eeeecc
+hi LineNr       guibg=#000000 ctermbg=16 guifg=#555753 ctermfg=8
+hi MatchParen   guibg=#ad7fa8 ctermbg=13 guifg=#eeeecc ctermfg=230
 " ModeMsg		'showmode' message (e.g., "-- INSERT --")
-hi MoreMsg      guibg=NONE    guifg=#4e9a06
-hi NonText      guifg=#555753
-hi Normal       guibg=#2e3436 guifg=#d3d7cf
-hi Pmenu        guibg=#000000 guifg=#c0c0c0
-hi PmenuSel     guibg=#555753 guifg=#eeeecc
-hi PmenuSbar    guibg=#444444 guifg=#444444
-hi PmenuThumb   guibg=#888a85 guifg=#888a85
+hi MoreMsg      guibg=NONE ctermbg=NONE guifg=#4e9a06 ctermfg=2
+hi NonText      guibg=NONE ctermbg=NONE guifg=#555753 ctermfg=8
+hi Normal       guibg=#2e3436 ctermbg=0 guifg=#d3d7cf ctermfg=7
+hi Pmenu        guibg=#000000 ctermbg=16 guifg=#c0c0c0 ctermfg=250
+hi PmenuSel     guibg=#555753 ctermbg=8 guifg=#eeeecc ctermfg=230
+hi PmenuSbar    guibg=#444444 ctermbg=238 guifg=#444444 ctermfg=238
+hi PmenuThumb   guibg=#888a85 ctermbg=102 guifg=#888a85 ctermfg=102
 " Question	|hit-enter| prompt and yes/no questions
-hi Search       guibg=#4e9a06 guifg=#eeeeec
-hi SpecialKey   guibg=NONE    guifg=#555753
+hi Search       guibg=#4e9a06 ctermbg=2 guifg=#eeeeec ctermfg=15
+hi SpecialKey   guibg=NONE ctermbg=NONE guifg=#555753 ctermfg=8
 " SpellBad	Word that is not recognized by the spellchecker. |spell|
 " SpellCap	Word that should start with a capital. |spell|
 " SpellLocal	Word that is recognized by the spellchecker as one that is
@@ -92,27 +92,27 @@ hi SpecialKey   guibg=NONE    guifg=#555753
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
 " Title		titles for output from ":set all", ":autocmd" etc.
-hi Title        guibg=NONE    guifg=#f57900 gui=bold
+hi Title        guibg=NONE ctermbg=NONE guifg=#f57900 ctermfg=208 gui=bold cterm=bold
 " Visual		Visual mode selection
-hi Visual       guibg=#888a85 guifg=#eeeeec
+hi Visual       guibg=#888a85 ctermbg=102 guifg=#eeeeec ctermfg=15
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 " WarningMsg	warning messages
 " WildMenu	current match in 'wildmenu' completion
 " }}}
 " Syntax groups colors (:help group-name) {{{
 " ------------------
-hi Comment      guibg=NONE    guifg=#888a85 gui=italic
-hi Constant     guibg=NONE    guifg=#edd400
-hi Boolean      guibg=NONE    guifg=#ce5c00
-hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
-hi Statement    guibg=NONE    guifg=#eeeeec gui=bold
-hi PreProc      guibg=NONE    guifg=#ad7fa8
-hi Type         guibg=NONE    guifg=#8ae234 gui=bold
-hi Special      guibg=NONE    guifg=#fcaf3e
-hi SpecialChar  guibg=NONE    guifg=#ce5c00
-hi Underlined   guibg=NONE    guifg=#729fcf gui=underline
-hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
-hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
+hi Comment      guibg=NONE ctermbg=NONE guifg=#888a85 ctermfg=102 gui=italic cterm=italic
+hi Constant     guibg=NONE ctermbg=NONE guifg=#edd400 ctermfg=220
+hi Boolean      guibg=NONE ctermbg=NONE guifg=#ce5c00 ctermfg=166
+hi Identifier   guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=NONE cterm=NONE
+hi Statement    guibg=NONE ctermbg=NONE guifg=#eeeeec ctermfg=15 gui=bold cterm=bold
+hi PreProc      guibg=NONE ctermbg=NONE guifg=#ad7fa8 ctermfg=13
+hi Type         guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
+hi Special      guibg=NONE ctermbg=NONE guifg=#fcaf3e ctermfg=215
+hi SpecialChar  guibg=NONE ctermbg=NONE guifg=#ce5c00 ctermfg=166
+hi Underlined   guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=underline cterm=underline
+hi Error        guibg=#cc0000 ctermbg=1 guifg=#eeeeec ctermfg=15 gui=bold cterm=bold
+hi Todo         guibg=#fce94f ctermbg=11 guifg=#888a85 ctermfg=102 gui=bold cterm=bold
 " }}}
 " gitcommit colors {{{
 " ----------------
@@ -123,12 +123,12 @@ hi link gitcommitDiscarded gitcommitComment
 hi link gitcommitSelected  gitcommitComment
 hi link diffFile           Special
 hi link diffNewFile diffFile
-hi gitcommitDiscardedType  guibg=NONE guifg=#ef2929
-hi gitcommitSelectedType   guibg=NONE guifg=#8ae234
-hi gitcommitUnmergedType   guibg=NONE guifg=#fce94f
-hi gitcommitDiscardedFile  guibg=NONE guifg=#ef2929 gui=bold
-hi gitcommitSelectedFile   guibg=NONE guifg=#8ae234 gui=bold
-hi gitcommitUnmergedFile   guibg=NONE guifg=#fce94f gui=bold
+hi gitcommitDiscardedType  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
+hi gitcommitSelectedType   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
+hi gitcommitUnmergedType   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11
+hi gitcommitDiscardedFile  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
+hi gitcommitSelectedFile   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
+hi gitcommitUnmergedFile   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11 gui=bold cterm=bold
 " }}}
 " XML Colors {{{
 " ----------
