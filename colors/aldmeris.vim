@@ -16,19 +16,44 @@ endif
 
 let g:colors_name = "aldmeris"
 
-" Tango palette reminder {{{
-" -------------
-" butter      #fce94f #edd400 #c4a000
-" chameleon   #8ae234 #73d216 #4e9a06
-" orange      #fcaf3e #f57900 #ce5c00
-" skyblue     #729fcf #3465a4 #204a87
-" plum        #ad7fa8 #75507b #5c3566
-" chocolate   #e9b96e #c17d11 #8f5902
-" scarletred  #ef2929 #cc0000 #a40000
-" aluminium   #eeeeec #d3d7cf #babdb6
-"             #888a85 #555753 #2e3436
-" }}}
-" Aldmeris color {{{
+" Color values {{{
+" ------------
+"
+" NOTE FOR TERMINAL USERS:
+" -----------------------
+" The colorscheme is compatible with terminals that support xterm-256color mode.
+" Note that the colors 1 to 15 and their hexadecimal equivalents are taken from
+" a tango palette which will give the most accurate result if you set your term
+" colors with it.
+" Below is an .Xdefaults example of that palette:
+"
+" ! Black
+" *color0:  #2E3436
+" *color8:  #555753
+" ! Red
+" *color1:  #CC0000
+" *color9:  #EF2929
+" ! Green
+" *color2:  #4E9A06
+" *color10: #8AE234
+" ! Yellow
+" *color3:  #C4A000
+" *color11: #FCE94F
+" ! Blue
+" *color4:  #3465A4
+" *color12: #729FCF
+" ! Purple
+" *color5:  #75507B
+" *color13: #AD7FA8
+" ! Cyan
+" *color6:  #06989A
+" *color14: #34E2E2
+" ! White
+" *color7:  #D3D7CF
+" *color15: #EEEEEC
+"
+" ALDMERIS COLORS VALUES:
+" ----------------------------------
 "  Name        Gui       xterm/hex
 " -----------  --------  -----------
 " butter1      #fce94f   11  #fce94f
@@ -49,6 +74,19 @@ let g:colors_name = "aldmeris"
 " aluminium5   #555753   8   #555753
 " aluminium6   #2e3436   0   #2e3436
 " black        #000000   16  #000000
+"
+" -----------------------
+" TANGO PALETTE REMINDER:
+" -----------------------
+" butter      #fce94f #edd400 #c4a000
+" chameleon   #8ae234 #73d216 #4e9a06
+" orange      #fcaf3e #f57900 #ce5c00
+" skyblue     #729fcf #3465a4 #204a87
+" plum        #ad7fa8 #75507b #5c3566
+" chocolate   #e9b96e #c17d11 #8f5902
+" scarletred  #ef2929 #cc0000 #a40000
+" aluminium   #eeeeec #d3d7cf #babdb6
+"             #888a85 #555753 #2e3436
 " }}}
 " Highlight default (:help highlight-default) {{{
 " ----------
