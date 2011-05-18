@@ -80,7 +80,6 @@ hi PmenuSel     guibg=#555753 guifg=#eeeecc
 hi PmenuSbar    guibg=#444444 guifg=#444444
 hi PmenuThumb   guibg=#888a85 guifg=#888a85
 " Question	|hit-enter| prompt and yes/no questions
-" Search		Last search pattern highlighting (see 'hlsearch').
 hi Search       guibg=#4e9a06 guifg=#eeeeec
 hi SpecialKey   guibg=NONE    guifg=#555753
 " SpellBad	Word that is not recognized by the spellchecker. |spell|
