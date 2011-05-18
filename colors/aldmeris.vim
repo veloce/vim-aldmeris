@@ -35,11 +35,11 @@ let g:colors_name = "aldmeris"
 " butter2      #edd400   220 #ffd700
 " chameleon1   #8ae234   10  #8ae234
 " chameleon3   #4e9a06   2   #4e9a06
+" orange1      #fcaf3e   215 #ffaf5f
 " orange2      #f57900   208 #ff8700
 " orange3      #ce5c00   166 #d75f00
 " skyblue1     #729fcf   12  #729fcf
 " plum1        #ad7fa8   13  #ad7fa8
-" chocolate1   #e9b96e   179 #d7af5f
 " scarletred1  #ef2929   9   #ef2929
 " scarletred2  #cc0000   1   #cc0000
 " aluminium1   #eeeeec   15  #eeeeec
@@ -109,7 +109,8 @@ hi Identifier   guibg=NONE    guifg=#729fcf gui=NONE
 hi Statement    guibg=NONE    guifg=#eeeeec gui=bold
 hi PreProc      guibg=NONE    guifg=#ad7fa8
 hi Type         guibg=NONE    guifg=#8ae234 gui=bold
-hi Special      guibg=NONE    guifg=#ce5c00
+hi Special      guibg=NONE    guifg=#fcaf3e
+hi SpecialChar  guibg=NONE    guifg=#ce5c00
 hi Underlined   guibg=NONE    guifg=#729fcf gui=underline
 hi Error        guibg=#cc0000 guifg=#eeeeec gui=bold
 hi Todo         guibg=#fce94f guifg=#888a85 gui=bold
@@ -121,7 +122,7 @@ hi link gitcommitHeader    gitcommitComment
 hi link gitcommitUntracked gitcommitComment
 hi link gitcommitDiscarded gitcommitComment
 hi link gitcommitSelected  gitcommitComment
-hi diffFile                guibg=NONE guifg=#e9b96e
+hi link diffFile           Special
 hi link diffNewFile diffFile
 hi gitcommitDiscardedType  guibg=NONE guifg=#ef2929
 hi gitcommitSelectedType   guibg=NONE guifg=#8ae234
