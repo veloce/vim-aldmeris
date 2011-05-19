@@ -164,6 +164,7 @@ hi link diffNewFile diffFile
 hi gitcommitDiscardedType  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
 hi gitcommitSelectedType   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
 hi gitcommitUnmergedType   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11
+hi gitcommitUntrackedFile  guibg=NONE ctermbg=NONE guifg=#ad7fa8 ctermfg=13 gui=bold cterm=bold
 hi gitcommitDiscardedFile  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
 hi gitcommitSelectedFile   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
 hi gitcommitUnmergedFile   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11 gui=bold cterm=bold
