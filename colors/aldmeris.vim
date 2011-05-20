@@ -154,13 +154,13 @@ hi Todo         guibg=#fce94f ctermbg=11 guifg=#888a85 ctermfg=102 gui=bold cter
 " }}}
 " gitcommit colors {{{
 " ----------------
+hi link gitEmail           SpecialChar
+hi link gitEmailDelimiter  gitEmail
 hi link gitcommitComment   Comment
 hi link gitcommitHeader    gitcommitComment
 hi link gitcommitUntracked gitcommitComment
 hi link gitcommitDiscarded gitcommitComment
 hi link gitcommitSelected  gitcommitComment
-hi link diffFile           Special
-hi link diffNewFile diffFile
 hi gitcommitDiscardedType  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
 hi gitcommitSelectedType   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
 hi gitcommitUnmergedType   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11
@@ -168,6 +168,12 @@ hi gitcommitUntrackedFile  guibg=NONE ctermbg=NONE guifg=#ad7fa8 ctermfg=13 gui=
 hi gitcommitDiscardedFile  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
 hi gitcommitSelectedFile   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
 hi gitcommitUnmergedFile   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11 gui=bold cterm=bold
+" }}}
+" diff colors {{{
+hi link diffFile           Special
+hi link diffNewFile        diffFile
+hi diffAdded               guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
+hi diffRemoved             guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
 " }}}
 " XML Colors {{{
 " ----------
