@@ -8,14 +8,6 @@
 " The original theme is part of GtkSourceView
 " Original author: Paolo Borelli <pborelli@gnome.org>
 
-set background=dark
-hi clear
-if exists("syntax_on")
-   syntax reset
-endif
-
-let g:colors_name = "aldmeris"
-
 " Color values {{{
 " ------------
 "
@@ -87,6 +79,15 @@ let g:colors_name = "aldmeris"
 " scarletred  #ef2929 #cc0000 #a40000
 " aluminium   #eeeeec #d3d7cf #babdb6
 "             #888a85 #555753 #2e3436
+" }}}
+" Initialization {{{
+set background=dark
+hi clear
+if exists("syntax_on")
+   syntax reset
+endif
+
+let g:colors_name = "aldmeris"
 " }}}
 " Highlight default (:help highlight-default) {{{
 " ----------
