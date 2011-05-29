@@ -80,26 +80,21 @@
 " aluminium   #eeeeec #d3d7cf #babdb6
 "             #888a85 #555753 #2e3436
 " }}}
-" Custom function definition {{{
-" http://stackoverflow.com/questions/2211477/how-can-i-use-variables-to-dry-up-vim-colorthemes
+" Custom highlighting function {{{
+if has("gui_running")
+    let s:hi_args = ['guibg', 'guifg', 'gui']
+else
+    let s:hi_args = ['ctermbg', 'ctermfg', 'cterm']
+endif
 function! s:Hi(name, ...)
-    if has("gui_running")
-        let hi_args = ['guibg', 'guifg', 'gui']
-    else
-        let hi_args = ['ctermbg', 'ctermfg', 'cterm']
-    endif
     let command = 'hi ' . a:name
-    if (len(a:000) < 1) || (len(a:000) > (len(hi_args)))
-        echoerr "No colour or too many colours specified"
-    else
-        for i in range(0,len(a:000)-1)
-            let command .= ' ' . hi_args[i] . '=' . a:000[i]
-        endfor
-        exe command
-    endif
+    for i in range(0,len(a:000)-1)
+        let command .= ' ' . s:hi_args[i] . '=' . a:000[i]
+    endfor
+    exe command
 endfunc
 " }}}
-" Initialization {{{
+" Colorscheme initialization {{{
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -108,38 +103,103 @@ endif
 
 let g:colors_name = "aldmeris"
 " }}}
+" Default options {{{
+if !exists("g:aldmeris_term_palette")
+    let g:aldmeris_term_palette = "xterm"
+endif
+" }}}
+" Gui & term palettes definition {{{
+if has("gui_running")
+    let s:butter1     = "#fce94f"
+    let s:butter2     = "#edd400"
+    let s:chameleon1  = "#8ae234"
+    let s:chameleon3  = "#4e9a06"
+    let s:orange1     = "#fcaf3e"
+    let s:orange2     = "#f57900"
+    let s:orange3     = "#ce5c00"
+    let s:skyblue1    = "#729fcf"
+    let s:plum1       = "#ad7fa8"
+    let s:scarletred1 = "#ef2929"
+    let s:scarletred2 = "#cc0000"
+    let s:aluminium1  = "#eeeeec"
+    let s:aluminium2  = "#d3d7cf"
+    let s:aluminium3  = "#babdb6"
+    let s:aluminium4  = "#888a85"
+    let s:aluminium5  = "#555753"
+    let s:aluminium6  = "#2e3436"
+    let s:black       = "#000000"
+elseif &t_Co == 256 && g:aldmeris_term_palette == "tango"
+    let s:butter1     = "11"
+    let s:butter2     = "220"
+    let s:chameleon1  = "10"
+    let s:chameleon3  = "2"
+    let s:orange1     = "215"
+    let s:orange2     = "208"
+    let s:orange3     = "166"
+    let s:skyblue1    = "12"
+    let s:plum1       = "13"
+    let s:scarletred1 = "9"
+    let s:scarletred2 = "1"
+    let s:aluminium1  = "15"
+    let s:aluminium2  = "7"
+    let s:aluminium3  = "250"
+    let s:aluminium4  = "102"
+    let s:aluminium5  = "8"
+    let s:aluminium6  = "0"
+    let s:black       = "16"
+elseif &t_Co == 256
+    let s:butter1     = "221"
+    let s:butter2     = "220"
+    let s:chameleon1  = "113"
+    let s:chameleon3  = "64"
+    let s:orange1     = "215"
+    let s:orange2     = "208"
+    let s:orange3     = "166"
+    let s:skyblue1    = "74"
+    let s:plum1       = "139"
+    let s:scarletred1 = "196"
+    let s:scarletred2 = "160"
+    let s:aluminium1  = "231"
+    let s:aluminium2  = "252"
+    let s:aluminium3  = "250"
+    let s:aluminium4  = "102"
+    let s:aluminium5  = "240"
+    let s:aluminium6  = "236"
+    let s:black       = "16"
+endif
+" }}}
 " Highlight default (:help highlight-default) {{{
 " ----------
 " ColorColumn	used for the columns set with 'colorcolumn'
 " Conceal		placeholder characters substituted for concealed
-hi Cursor       guibg=#d3d7cf ctermbg=7 guifg=#000000 ctermfg=16
+call s:Hi( 'Cursor',       s:aluminium2,  s:black )
 " CursorIM	like Cursor, but used when in IME mode
-hi CursorColumn guibg=#555753 ctermbg=8 guifg=NONE ctermfg=NONE cterm=NONE
-hi CursorLine   guibg=#555753 ctermbg=8 guifg=NONE ctermfg=NONE cterm=NONE
-hi Directory    guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=bold cterm=bold
-hi DiffAdd      guibg=#555753 ctermbg=8 guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
-hi DiffChange   guibg=#555753 ctermbg=8 guifg=#fce94f ctermfg=11 gui=bold cterm=bold
-hi DiffDelete   guibg=#555753 ctermbg=8 guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
-hi DiffText     guibg=#555753 ctermbg=8 guifg=#729fcf ctermfg=12 gui=bold cterm=bold
+call s:Hi( 'CursorColumn', s:aluminium5,  "NONE",        "NONE" )
+call s:Hi( 'CursorLine',   s:aluminium5,  "NONE",        "NONE" )
+call s:Hi( 'Directory',    "NONE",        s:skyblue1,    "bold" )
+call s:Hi( 'DiffAdd',      s:aluminium5,  s:chameleon1,  "bold" )
+call s:Hi( 'DiffChange',   s:aluminium5,  s:butter1,     "bold" )
+call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred1, "bold" )
+call s:Hi( 'DiffText',     s:aluminium5,  s:skyblue1,    "bold" )
 " ErrorMsg	error messages on the command line
 " VertSplit	the column separating vertically split windows
-hi Folded       guibg=NONE ctermbg=NONE guifg=#babdb6 ctermfg=250 gui=bold,underline cterm=bold,underline
+call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
 " FoldColumn	'foldcolumn'
 " SignColumn	column where |signs| are displayed
 " IncSearch	'incsearch' highlighting;
-hi LineNr       guibg=#000000 ctermbg=16 guifg=#555753 ctermfg=8
-hi MatchParen   guibg=#ad7fa8 ctermbg=13 guifg=#eeeecc ctermfg=230
-" ModeMsg		'showmode' message (e.g., "-- INSERT --")
-hi MoreMsg      guibg=NONE ctermbg=NONE guifg=#4e9a06 ctermfg=2
-hi NonText      guibg=NONE ctermbg=NONE guifg=#555753 ctermfg=8
-hi Normal       guibg=#2e3436 ctermbg=0 guifg=#d3d7cf ctermfg=7
-hi Pmenu        guibg=#000000 ctermbg=16 guifg=#c0c0c0 ctermfg=250
-hi PmenuSel     guibg=#555753 ctermbg=8 guifg=#eeeecc ctermfg=230
-hi PmenuSbar    guibg=#444444 ctermbg=238 guifg=#444444 ctermfg=238
-hi PmenuThumb   guibg=#888a85 ctermbg=102 guifg=#888a85 ctermfg=102
+call s:Hi( 'LineNr',       s:black,       s:aluminium5 )
+call s:Hi( 'MatchParen',   s:plum1,       s:aluminium1 )
+" ModeMsg		'showmode' message (e.g. , "-- INSERT --")
+call s:Hi( 'MoreMsg',      "NONE",        s:chameleon3 )
+call s:Hi( 'NonText',      "NONE",        s:aluminium5 )
+call s:Hi( 'Normal',       s:aluminium6,  s:aluminium2 )
+call s:Hi( 'Pmenu',        s:black,       s:aluminium3 )
+call s:Hi( 'PmenuSel',     s:aluminium5,  s:aluminium1 )
+call s:Hi( 'PmenuSbar',    s:aluminium5,  s:aluminium5 )
+call s:Hi( 'PmenuThumb',   s:aluminium4,  s:aluminium4 )
 " Question	|hit-enter| prompt and yes/no questions
-hi Search       guibg=#4e9a06 ctermbg=2 guifg=#eeeeec ctermfg=15
-hi SpecialKey   guibg=NONE ctermbg=NONE guifg=#555753 ctermfg=8
+call s:Hi( 'Search',       s:chameleon3,  s:aluminium1 )
+call s:Hi( 'SpecialKey',   "NONE",        s:aluminium5 )
 " SpellBad	Word that is not recognized by the spellchecker. |spell|
 " SpellCap	Word that should start with a capital. |spell|
 " SpellLocal	Word that is recognized by the spellchecker as one that is
@@ -150,27 +210,27 @@ hi SpecialKey   guibg=NONE ctermbg=NONE guifg=#555753 ctermfg=8
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
 " Title		titles for output from ":set all", ":autocmd" etc.
-hi Title        guibg=NONE ctermbg=NONE guifg=#f57900 ctermfg=208 gui=bold cterm=bold
+call s:Hi( 'Title',        "NONE",        s:orange2,    "bold" )
 " Visual		Visual mode selection
-hi Visual       guibg=#888a85 ctermbg=102 guifg=#eeeeec ctermfg=15
+call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 " WarningMsg	warning messages
 " WildMenu	current match in 'wildmenu' completion
 " }}}
 " Syntax groups colors (:help group-name) {{{
 " ------------------
-hi Comment      guibg=NONE ctermbg=NONE guifg=#888a85 ctermfg=102 gui=italic cterm=italic
-hi Constant     guibg=NONE ctermbg=NONE guifg=#edd400 ctermfg=220
-hi Boolean      guibg=NONE ctermbg=NONE guifg=#ce5c00 ctermfg=166
-hi Identifier   guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=NONE cterm=NONE
-hi Statement    guibg=NONE ctermbg=NONE guifg=#eeeeec ctermfg=15 gui=bold cterm=bold
-hi PreProc      guibg=NONE ctermbg=NONE guifg=#ad7fa8 ctermfg=13
-hi Type         guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
-hi Special      guibg=NONE ctermbg=NONE guifg=#fcaf3e ctermfg=215
-hi SpecialChar  guibg=NONE ctermbg=NONE guifg=#ce5c00 ctermfg=166
-hi Underlined   guibg=NONE ctermbg=NONE guifg=#729fcf ctermfg=12 gui=underline cterm=underline
-hi Error        guibg=#cc0000 ctermbg=1 guifg=#eeeeec ctermfg=15 gui=bold cterm=bold
-hi Todo         guibg=#fce94f ctermbg=11 guifg=#888a85 ctermfg=102 gui=bold cterm=bold
+call s:Hi( 'Comment',      "NONE",        s:aluminium4, "italic" )
+call s:Hi( 'Constant',     "NONE",        s:butter2 )
+call s:Hi( 'Boolean',      "NONE",        s:orange3 )
+call s:Hi( 'Identifier',   "NONE",        s:skyblue1,   "NONE" )
+call s:Hi( 'Statement',    "NONE",        s:aluminium1, "bold" )
+call s:Hi( 'PreProc',      "NONE",        s:plum1 )
+call s:Hi( 'Type',         "NONE",        s:chameleon1, "bold" )
+call s:Hi( 'Special',      "NONE",        s:orange1 )
+call s:Hi( 'SpecialChar',  "NONE",        s:orange3 )
+call s:Hi( 'Underlined',   "NONE",        s:skyblue1,   "underline" )
+call s:Hi( 'Error',        s:scarletred2, s:aluminium1, "bold" )
+call s:Hi( 'Todo',         s:butter1,     s:aluminium4, "bold" )
 " }}}
 " gitcommit colors {{{
 " ----------------
@@ -181,19 +241,19 @@ hi link gitcommitHeader    gitcommitComment
 hi link gitcommitUntracked gitcommitComment
 hi link gitcommitDiscarded gitcommitComment
 hi link gitcommitSelected  gitcommitComment
-hi gitcommitDiscardedType  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
-hi gitcommitSelectedType   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
-hi gitcommitUnmergedType   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11
-hi gitcommitUntrackedFile  guibg=NONE ctermbg=NONE guifg=#ad7fa8 ctermfg=13 gui=bold cterm=bold
-hi gitcommitDiscardedFile  guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9 gui=bold cterm=bold
-hi gitcommitSelectedFile   guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10 gui=bold cterm=bold
-hi gitcommitUnmergedFile   guibg=NONE ctermbg=NONE guifg=#fce94f ctermfg=11 gui=bold cterm=bold
+call s:Hi( 'gitcommitDiscardedType',  "NONE", s:scarletred1 )
+call s:Hi( 'gitcommitSelectedType',   "NONE", s:chameleon1 )
+call s:Hi( 'gitcommitUnmergedType',   "NONE", s:butter1 )
+call s:Hi( 'gitcommitUntrackedFile',  "NONE", s:plum1,       "bold" )
+call s:Hi( 'gitcommitDiscardedFile',  "NONE", s:scarletred1, "bold" )
+call s:Hi( 'gitcommitSelectedFile',   "NONE", s:chameleon1,  "bold" )
+call s:Hi( 'gitcommitUnmergedFile',   "NONE", s:butter1,     "bold" )
 " }}}
 " diff colors {{{
 hi link diffFile           Special
 hi link diffNewFile        diffFile
-hi diffAdded               guibg=NONE ctermbg=NONE guifg=#8ae234 ctermfg=10
-hi diffRemoved             guibg=NONE ctermbg=NONE guifg=#ef2929 ctermfg=9
+call s:Hi( 'diffAdded',               "NONE", s:chameleon1 )
+call s:Hi( 'diffRemoved',             "NONE", s:scarletred1 )
 " }}}
 " XML Colors {{{
 " ----------
