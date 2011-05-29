@@ -48,23 +48,23 @@
 " ----------------------------------
 "  Name        Gui       xterm/hex
 " -----------  --------  -----------
-" butter1      #fce94f   11  #fce94f
+" butter1      #fce94f   221 #ffd75f
 " butter2      #edd400   220 #ffd700
-" chameleon1   #8ae234   10  #8ae234
-" chameleon3   #4e9a06   2   #4e9a06
+" chameleon1   #8ae234   113 #87d75f
+" chameleon3   #4e9a06   64  #5f8700
 " orange1      #fcaf3e   215 #ffaf5f
 " orange2      #f57900   208 #ff8700
 " orange3      #ce5c00   166 #d75f00
-" skyblue1     #729fcf   12  #729fcf
-" plum1        #ad7fa8   13  #ad7fa8
-" scarletred1  #ef2929   9   #ef2929
-" scarletred2  #cc0000   1   #cc0000
-" aluminium1   #eeeeec   15  #eeeeec
-" aluminium2   #d3d7cf   7   #d3d7cf
+" skyblue1     #729fcf   74  #5fafd7
+" plum1        #ad7fa8   139 #af87af
+" scarletred1  #ef2929   196 #ff0000
+" scarletred2  #cc0000   160 #d70000
+" aluminium1   #eeeeec   231 #ffffff
+" aluminium2   #d3d7cf   252 #d0d0d0
 " aluminium3   #babdb6   250 #bcbcbc
 " aluminium4   #888a85   102 #878787
-" aluminium5   #555753   8   #555753
-" aluminium6   #2e3436   0   #2e3436
+" aluminium5   #555753   240 #585858
+" aluminium6   #2e3436   236 #303030
 " black        #000000   16  #000000
 "
 " -----------------------
