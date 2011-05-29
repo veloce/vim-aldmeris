@@ -80,6 +80,25 @@
 " aluminium   #eeeeec #d3d7cf #babdb6
 "             #888a85 #555753 #2e3436
 " }}}
+" Custom function definition {{{
+" http://stackoverflow.com/questions/2211477/how-can-i-use-variables-to-dry-up-vim-colorthemes
+function! s:Hi(name, ...)
+    if has("gui_running")
+        let hi_args = ['guibg', 'guifg', 'gui']
+    else
+        let hi_args = ['ctermbg', 'ctermfg', 'cterm']
+    endif
+    let command = 'hi ' . a:name
+    if (len(a:000) < 1) || (len(a:000) > (len(hi_args)))
+        echoerr "No colour or too many colours specified"
+    else
+        for i in range(0,len(a:000)-1)
+            let command .= ' ' . hi_args[i] . '=' . a:000[i]
+        endfor
+        exe command
+    endif
+endfunc
+" }}}
 " Initialization {{{
 set background=dark
 hi clear
