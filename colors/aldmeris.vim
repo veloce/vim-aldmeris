@@ -53,7 +53,6 @@
 " chameleon1   #8ae234   113 #87d75f
 " chameleon3   #4e9a06   64  #5f8700
 " orange1      #fcaf3e   215 #ffaf5f
-" orange2      #f57900   208 #ff8700
 " orange3      #ce5c00   166 #d75f00
 " skyblue1     #729fcf   74  #5fafd7
 " plum1        #ad7fa8   139 #af87af
@@ -123,7 +122,6 @@ if has("gui_running")
     let s:chameleon1  = "#8ae234"
     let s:chameleon3  = "#4e9a06"
     let s:orange1     = "#fcaf3e"
-    let s:orange2     = "#f57900"
     let s:orange3     = "#ce5c00"
     let s:skyblue1    = "#729fcf"
     let s:plum1       = "#ad7fa8"
@@ -142,7 +140,6 @@ elseif &t_Co == 256 && g:aldmeris_term_palette == "tango"
     let s:chameleon1  = "10"
     let s:chameleon3  = "2"
     let s:orange1     = "215"
-    let s:orange2     = "208"
     let s:orange3     = "166"
     let s:skyblue1    = "12"
     let s:plum1       = "13"
@@ -161,7 +158,6 @@ elseif &t_Co == 256
     let s:chameleon1  = "113"
     let s:chameleon3  = "64"
     let s:orange1     = "215"
-    let s:orange2     = "208"
     let s:orange3     = "166"
     let s:skyblue1    = "74"
     let s:plum1       = "139"
@@ -217,7 +213,7 @@ call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
-call s:Hi( 'Title',        "NONE",        s:orange2,     "bold" )
+call s:Hi( 'Title',        "NONE",        s:butter1,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 call s:Hi( 'WarningMsg',   "NONE",        s:scarletred2 )
@@ -325,3 +321,5 @@ hi link cssValueLength Boolean
 hi link cssPseudoClassId Identifier
 " }}}
 " vim:foldmethod=marker
+
+
