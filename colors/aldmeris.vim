@@ -179,7 +179,7 @@ call s:Hi( 'Cursor',       s:aluminium2,  s:black )
 " CursorIM	like Cursor, but used when in IME mode
 call s:Hi( 'CursorColumn', s:aluminium5,  "NONE",        "NONE" )
 call s:Hi( 'CursorLine',   s:aluminium5,  "NONE",        "NONE" )
-call s:Hi( 'Directory',    "NONE",        s:skyblue1,    "bold" )
+call s:Hi( 'Directory',    "NONE",        s:skyblue1,    "NONE" )
 call s:Hi( 'DiffAdd',      s:aluminium5,  s:chameleon3,  "bold" )
 call s:Hi( 'DiffChange',   s:aluminium5,  s:orange1,     "bold" )
 call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred2, "bold" )
