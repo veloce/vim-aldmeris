@@ -79,6 +79,7 @@
 " scarletred  #ef2929 #cc0000 #a40000
 " aluminium   #eeeeec #d3d7cf #babdb6
 "             #888a85 #555753 #2e3436
+"
 " }}}
 " Custom highlighting function {{{
 if has("gui_running")
@@ -95,6 +96,7 @@ function! s:Hi(name, ...)
 endfunc
 " }}}
 " Colorscheme initialization {{{
+" --------------------------
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -103,12 +105,18 @@ endif
 
 let g:colors_name = "aldmeris"
 " }}}
-" Default options {{{
+" Default options and env settings {{{
+" --------------------------------
 if !exists("g:aldmeris_term_palette")
     let g:aldmeris_term_palette = "xterm"
 endif
+
+" List terminals that support italics (I'm sure only for xrvt)
+let s:terms_italic = ["rxvt", "rxvt-unicode", "rxvt-unicode-256color"]
+
 " }}}
 " Gui & term palettes definition {{{
+" ------------------------------
 if has("gui_running")
     let s:butter1     = "#fce94f"
     let s:butter2     = "#edd400"
@@ -169,7 +177,7 @@ elseif &t_Co == 256
 endif
 " }}}
 " Highlight default (:help highlight-default) {{{
-" ----------
+" -------------------------------------------
 " ColorColumn	used for the columns set with 'colorcolumn'
 " Conceal		placeholder characters substituted for concealed
 call s:Hi( 'Cursor',       s:aluminium2,  s:black )
@@ -218,7 +226,7 @@ call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " WildMenu	current match in 'wildmenu' completion
 " }}}
 " Syntax groups colors (:help group-name) {{{
-" ------------------
+" ---------------------------------------
 call s:Hi( 'Comment',      "NONE",        s:aluminium4, "italic" )
 call s:Hi( 'Constant',     "NONE",        s:butter2 )
 call s:Hi( 'Boolean',      "NONE",        s:orange3 )
@@ -231,6 +239,14 @@ call s:Hi( 'SpecialChar',  "NONE",        s:orange3 )
 call s:Hi( 'Underlined',   "NONE",        s:skyblue1,   "underline" )
 call s:Hi( 'Error',        s:scarletred2, s:aluminium1, "bold" )
 call s:Hi( 'Todo',         s:butter1,     s:aluminium4, "bold" )
+
+" italic is a special case
+if !has("gui_running")
+    hi Comment cterm=NONE
+    if (index(s:terms_italic, &term) >= 0)
+        hi Comment cterm=italic
+    endif
+endif
 " }}}
 " gitcommit colors {{{
 " ----------------
