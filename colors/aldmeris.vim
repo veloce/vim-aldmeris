@@ -112,7 +112,6 @@ endif
 
 " List terminals that support italics (I'm sure only for xrvt)
 let s:terms_italic = ["rxvt", "rxvt-unicode", "rxvt-unicode-256color"]
-
 " }}}
 " Gui & term palettes definition {{{
 " ------------------------------
@@ -181,16 +180,16 @@ call s:Hi( 'Cursor',       s:aluminium2,  s:black )
 call s:Hi( 'CursorColumn', s:aluminium5,  "NONE",        "NONE" )
 call s:Hi( 'CursorLine',   s:aluminium5,  "NONE",        "NONE" )
 call s:Hi( 'Directory',    "NONE",        s:skyblue1,    "bold" )
-call s:Hi( 'DiffAdd',      s:aluminium5,  s:chameleon1,  "bold" )
-call s:Hi( 'DiffChange',   s:aluminium5,  s:butter1,     "bold" )
-call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred1, "bold" )
+call s:Hi( 'DiffAdd',      s:aluminium5,  s:chameleon3,  "bold" )
+call s:Hi( 'DiffChange',   s:aluminium5,  s:orange1,     "bold" )
+call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred2, "bold" )
 call s:Hi( 'DiffText',     s:aluminium5,  s:skyblue1,    "bold" )
 call s:Hi( 'ErrorMsg',     s:scarletred2, s:aluminium1 )
 call s:Hi( 'VertSplit',    s:aluminium4,  s:aluminium5,  "bold" )
 call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
 " FoldColumn	'foldcolumn'
 " SignColumn	column where |signs| are displayed
-" IncSearch	'incsearch' highlighting;
+" IncSearch	'incsearch' highlighting
 call s:Hi( 'LineNr',       s:black,       s:aluminium5 )
 call s:Hi( 'MatchParen',   s:plum1,       s:aluminium1 )
 " ModeMsg		'showmode' message (e.g. , "-- INSERT --")
@@ -321,5 +320,3 @@ hi link cssValueLength Boolean
 hi link cssPseudoClassId Identifier
 " }}}
 " vim:foldmethod=marker
-
-
