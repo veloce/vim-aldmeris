@@ -53,9 +53,12 @@
 " chameleon1   #8ae234   113 #87d75f
 " chameleon3   #4e9a06   64  #5f8700
 " orange1      #fcaf3e   215 #ffaf5f
+" orange2      #f57900   208 #ff8700
 " orange3      #ce5c00   166 #d75f00
 " skyblue1     #729fcf   74  #5fafd7
+" skyblue2     #3465a4   61  #5f5faf
 " plum1        #ad7fa8   139 #af87af
+" plum2        #75507b   96  #875f87
 " scarletred1  #ef2929   196 #ff0000
 " scarletred2  #cc0000   160 #d70000
 " aluminium1   #eeeeec   231 #ffffff
@@ -82,7 +85,7 @@
 " }}}
 " Custom highlighting function {{{
 if has("gui_running")
-    let s:hi_args = ['guibg', 'guifg', 'gui']
+    let s:hi_args = ['guibg', 'guifg', 'gui', 'guisp']
 else
     let s:hi_args = ['ctermbg', 'ctermfg', 'cterm']
 endif
@@ -121,9 +124,12 @@ if has("gui_running")
     let s:chameleon1  = "#8ae234"
     let s:chameleon3  = "#4e9a06"
     let s:orange1     = "#fcaf3e"
+    let s:orange2     = "#f57900"
     let s:orange3     = "#ce5c00"
     let s:skyblue1    = "#729fcf"
+    let s:skyblue2    = "#3465a4"
     let s:plum1       = "#ad7fa8"
+    let s:plum2       = "#75507b"
     let s:scarletred1 = "#ef2929"
     let s:scarletred2 = "#cc0000"
     let s:aluminium1  = "#eeeeec"
@@ -139,9 +145,12 @@ elseif &t_Co == 256 && g:aldmeris_term_palette == "tango"
     let s:chameleon1  = "10"
     let s:chameleon3  = "2"
     let s:orange1     = "215"
+    let s:orange2     = "208"
     let s:orange3     = "166"
     let s:skyblue1    = "12"
+    let s:skyblue2    = "4"
     let s:plum1       = "13"
+    let s:plum2       = "5"
     let s:scarletred1 = "9"
     let s:scarletred2 = "1"
     let s:aluminium1  = "15"
@@ -157,9 +166,12 @@ elseif &t_Co == 256
     let s:chameleon1  = "113"
     let s:chameleon3  = "64"
     let s:orange1     = "215"
+    let s:orange2     = "208"
     let s:orange3     = "166"
     let s:skyblue1    = "74"
+    let s:skyblue2    = "61"
     let s:plum1       = "139"
+    let s:plum2       = "96"
     let s:scarletred1 = "196"
     let s:scarletred2 = "160"
     let s:aluminium1  = "231"
@@ -203,10 +215,17 @@ call s:Hi( 'PmenuThumb',   s:aluminium4,  s:aluminium4 )
 call s:Hi( 'Question',     "NONE",        s:chameleon1,  "bold" )
 call s:Hi( 'Search',       s:chameleon3,  s:aluminium1 )
 call s:Hi( 'SpecialKey',   "NONE",        s:aluminium5 )
-" SpellBad	Word that is not recognized by the spellchecker. |spell|
-" SpellCap	Word that should start with a capital. |spell|
-" SpellLocal	Word that is recognized by the spellchecker as one that is
-" SpellRare	Word that is recognized by the spellchecker as one that is
+    if has("gui_running")
+call s:Hi( 'SpellBad',     "NONE",  "NONE",  "undercurl", s:scarletred1 )
+call s:Hi( 'SpellCap',     "NONE",  "NONE",  "undercurl", s:skyblue1 )
+call s:Hi( 'SpellLocal',   "NONE",  "NONE",  "undercurl", s:orange1 )
+call s:Hi( 'SpellRare',    "NONE",  "NONE",  "undercurl", s:plum1 )
+    else
+call s:Hi( 'SpellBad',     s:scarletred2, "NONE",  "undercurl" )
+call s:Hi( 'SpellCap',     s:skyblue2,    "NONE",  "undercurl" )
+call s:Hi( 'SpellLocal',   s:orange2,     "NONE",  "undercurl" )
+call s:Hi( 'SpellRare',    s:plum2,       "NONE",  "undercurl" )
+    endif
 " StatusLine	status line of current window
 call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
