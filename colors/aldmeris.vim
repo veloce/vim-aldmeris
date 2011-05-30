@@ -189,8 +189,8 @@ call s:Hi( 'DiffAdd',      s:aluminium5,  s:chameleon1,  "bold" )
 call s:Hi( 'DiffChange',   s:aluminium5,  s:butter1,     "bold" )
 call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred1, "bold" )
 call s:Hi( 'DiffText',     s:aluminium5,  s:skyblue1,    "bold" )
-" ErrorMsg	error messages on the command line
-" VertSplit	the column separating vertically split windows
+call s:Hi( 'ErrorMsg',     s:scarletred2, s:aluminium1 )
+call s:Hi( 'VertSplit',    s:aluminium4,  s:aluminium5,  "bold" )
 call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
 " FoldColumn	'foldcolumn'
 " SignColumn	column where |signs| are displayed
@@ -213,14 +213,14 @@ call s:Hi( 'SpecialKey',   "NONE",        s:aluminium5 )
 " SpellLocal	Word that is recognized by the spellchecker as one that is
 " SpellRare	Word that is recognized by the spellchecker as one that is
 " StatusLine	status line of current window
-" StatusLineNC	status lines of not-current windows
+call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
 call s:Hi( 'Title',        "NONE",        s:orange2,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
-" WarningMsg	warning messages
+call s:Hi( 'WarningMsg',   "NONE",        s:scarletred2 )
 " WildMenu	current match in 'wildmenu' completion
 " }}}
 " Syntax groups colors (:help group-name) {{{
@@ -240,9 +240,8 @@ call s:Hi( 'Todo',         s:butter1,     s:aluminium4, "bold" )
 
 " italic is a special case
 if !has("gui_running")
-    hi Comment cterm=NONE
-    if (index(s:terms_italic, &term) >= 0)
-        hi Comment cterm=italic
+    if (index(s:terms_italic, &term) < 0)
+        hi Comment cterm=NONE
     endif
 endif
 " }}}
