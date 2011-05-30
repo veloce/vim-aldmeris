@@ -198,14 +198,14 @@ call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
 call s:Hi( 'LineNr',       s:black,       s:aluminium5 )
 call s:Hi( 'MatchParen',   s:plum1,       s:aluminium1 )
 " ModeMsg		'showmode' message (e.g. , "-- INSERT --")
-call s:Hi( 'MoreMsg',      "NONE",        s:chameleon3 )
+call s:Hi( 'MoreMsg',      "NONE",        s:chameleon1,  "bold" )
 call s:Hi( 'NonText',      "NONE",        s:aluminium5 )
 call s:Hi( 'Normal',       s:aluminium6,  s:aluminium2 )
 call s:Hi( 'Pmenu',        s:black,       s:aluminium3 )
 call s:Hi( 'PmenuSel',     s:aluminium5,  s:aluminium1 )
 call s:Hi( 'PmenuSbar',    s:aluminium5,  s:aluminium5 )
 call s:Hi( 'PmenuThumb',   s:aluminium4,  s:aluminium4 )
-" Question	|hit-enter| prompt and yes/no questions
+call s:Hi( 'Question',     "NONE",        s:chameleon1,  "bold" )
 call s:Hi( 'Search',       s:chameleon3,  s:aluminium1 )
 call s:Hi( 'SpecialKey',   "NONE",        s:aluminium5 )
 " SpellBad	Word that is not recognized by the spellchecker. |spell|
@@ -217,9 +217,7 @@ call s:Hi( 'SpecialKey',   "NONE",        s:aluminium5 )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
-" Title		titles for output from ":set all", ":autocmd" etc.
-call s:Hi( 'Title',        "NONE",        s:orange2,    "bold" )
-" Visual		Visual mode selection
+call s:Hi( 'Title',        "NONE",        s:orange2,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 " WarningMsg	warning messages
