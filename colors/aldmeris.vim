@@ -9,6 +9,7 @@
 " Original author: Paolo Borelli <pborelli@gnome.org>.
 "
 " TODO:
+"   - refactor color variables with a dict?
 "   - css highlighting
 "   - create a README
 "   - see to make a light theme based on tango
