@@ -199,8 +199,8 @@ call s:Hi( 'DiffText',     s:aluminium5,  s:skyblue1,    "bold" )
 call s:Hi( 'ErrorMsg',     s:scarletred2, s:aluminium1 )
 call s:Hi( 'VertSplit',    s:aluminium4,  s:aluminium6,  "bold" )
 call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
-" FoldColumn	'foldcolumn'
-" SignColumn	column where |signs| are displayed
+call s:Hi( 'FoldColumn',   s:aluminium3,  s:aluminium5 )
+call s:Hi( 'SignColumn',   s:aluminium3,  s:aluminium5 )
 " IncSearch	'incsearch' highlighting
 call s:Hi( 'LineNr',       s:black,       s:aluminium5 )
 call s:Hi( 'MatchParen',   s:plum1,       s:aluminium1 )
