@@ -49,44 +49,37 @@
 " *color7:  #D3D7CF
 " *color15: #EEEEEC
 "
-" ALDMERIS COLORS VALUES:
+" TANGO PALETTE:
 " ----------------------------------
 "  Name        Gui       xterm/hex
 " -----------  --------  -----------
 " butter1      #fce94f   221 #ffd75f
 " butter2      #edd400   220 #ffd700
+" butter3      #c4a000   178 #d7af00
 " chameleon1   #8ae234   113 #87d75f
+" chameleon2   #73d216   76  #5fd700
 " chameleon3   #4e9a06   64  #5f8700
 " orange1      #fcaf3e   215 #ffaf5f
 " orange2      #f57900   208 #ff8700
 " orange3      #ce5c00   166 #d75f00
 " skyblue1     #729fcf   74  #5fafd7
 " skyblue2     #3465a4   61  #5f5faf
+" skyblue3     #204a87   24  #005f87
 " plum1        #ad7fa8   139 #af87af
 " plum2        #75507b   96  #875f87
+" plum3        #5c3566   239 #4e4e4e
+" chocolate1   #e9b96e   179 #d7af5f
+" chocolate2   #c17d11   136 #af8700
+" chocolate3   #8f5902   94  #875f00
 " scarletred1  #ef2929   196 #ff0000
 " scarletred2  #cc0000   160 #d70000
+" scarletred3  #a40000   124 #af0000
 " aluminium1   #eeeeec   231 #ffffff
 " aluminium2   #d3d7cf   252 #d0d0d0
 " aluminium3   #babdb6   250 #bcbcbc
 " aluminium4   #888a85   102 #878787
 " aluminium5   #555753   240 #585858
 " aluminium6   #2e3436   236 #303030
-" black        #000000   16  #000000
-"
-" -----------------------
-" TANGO PALETTE REMINDER:
-" -----------------------
-" butter      #fce94f #edd400 #c4a000
-" chameleon   #8ae234 #73d216 #4e9a06
-" orange      #fcaf3e #f57900 #ce5c00
-" skyblue     #729fcf #3465a4 #204a87
-" plum        #ad7fa8 #75507b #5c3566
-" chocolate   #e9b96e #c17d11 #8f5902
-" scarletred  #ef2929 #cc0000 #a40000
-" aluminium   #eeeeec #d3d7cf #babdb6
-"             #888a85 #555753 #2e3436
-"
 " }}}
 " Custom highlighting function {{{
 if has("gui_running")
