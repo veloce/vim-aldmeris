@@ -4,19 +4,24 @@
 " Url:          https://github.com/veloce/vim-aldmeris
 " License:      LGPL
 
-" A port of the gedit oblivion theme for vim
-" The original theme is part of GtkSourceView
-" Original author: Paolo Borelli <pborelli@gnome.org>
+" Aldmeris is a port of the gedit oblivion theme for vim.
+" The original theme is part of GtkSourceView.
+" Original author: Paolo Borelli <pborelli@gnome.org>.
 
-" Color values {{{
+" Usage {{{
 " ------------
-"
 " NOTE FOR TERMINAL USERS:
 " -----------------------
-" The colorscheme is compatible with terminals that support xterm-256color mode.
-" Note that the colors 1 to 15 and their hexadecimal equivalents are taken from
-" a tango palette which will give the most accurate result if you set your term
-" colors with it.
+" The colorscheme is compatible with terminals that support 256 colors. See:
+"
+"   http://vim.wikia.com/wiki/256_colors_in_vim
+"
+" If your terminal uses the tango palette for its base colors (which is,
+" I believe, the default in gnome-terminal), you can obtain the most accurate
+" result with aldmeris by setting this option in your .vimrc:
+"
+"   let g:aldmeris_termcolors = "tango"
+"
 " Below is an .Xdefaults example of that palette:
 "
 " ! Black
@@ -109,8 +114,8 @@ let g:colors_name = "aldmeris"
 " }}}
 " Default options and env settings {{{
 " --------------------------------
-if !exists("g:aldmeris_term_palette")
-    let g:aldmeris_term_palette = "xterm"
+if !exists("g:aldmeris_termcolors")
+    let g:aldmeris_termcolors = "xterm"
 endif
 
 " List terminals that support italics (I'm sure only for xrvt)
@@ -139,7 +144,7 @@ if has("gui_running")
     let s:aluminium5  = "#555753"
     let s:aluminium6  = "#2e3436"
     let s:black       = "#000000"
-elseif &t_Co == 256 && g:aldmeris_term_palette == "tango"
+elseif &t_Co == 256 && g:aldmeris_termcolors == "tango"
     let s:butter1     = "11"
     let s:butter2     = "220"
     let s:chameleon1  = "10"
