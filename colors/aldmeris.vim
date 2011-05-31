@@ -233,7 +233,6 @@ call s:Hi( 'Title',        "NONE",        s:butter1,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 call s:Hi( 'WarningMsg',   "NONE",        s:scarletred2 )
-" WildMenu	current match in 'wildmenu' completion
 call s:Hi( 'WildMenu',     s:butter2,     s:aluminium6  )
 " }}}
 " Syntax groups colors (:help group-name) {{{
