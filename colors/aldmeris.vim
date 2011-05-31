@@ -225,10 +225,10 @@ call s:Hi( 'SpellCap',     "NONE",        "NONE",        "undercurl", s:skyblue1
 call s:Hi( 'SpellLocal',   "NONE",        "NONE",        "undercurl", s:orange1 )
 call s:Hi( 'SpellRare',    "NONE",        "NONE",        "undercurl", s:plum1 )
     else
-call s:Hi( 'SpellBad',     s:scarletred2, "NONE",  "undercurl" )
-call s:Hi( 'SpellCap',     s:skyblue2,    "NONE",  "undercurl" )
-call s:Hi( 'SpellLocal',   s:orange2,     "NONE",  "undercurl" )
-call s:Hi( 'SpellRare',    s:plum2,       "NONE",  "undercurl" )
+call s:Hi( 'SpellBad',     s:scarletred2, "NONE",        "undercurl" )
+call s:Hi( 'SpellCap',     s:skyblue2,    "NONE",        "undercurl" )
+call s:Hi( 'SpellLocal',   s:orange2,     "NONE",        "undercurl" )
+call s:Hi( 'SpellRare',    s:plum2,       "NONE",        "undercurl" )
     endif
 call s:Hi( 'StatusLine',   s:aluminium6,  s:aluminium3,  "bold,reverse" )
 call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
