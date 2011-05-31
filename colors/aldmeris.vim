@@ -230,7 +230,7 @@ call s:Hi( 'SpellCap',     s:skyblue2,    "NONE",  "undercurl" )
 call s:Hi( 'SpellLocal',   s:orange2,     "NONE",  "undercurl" )
 call s:Hi( 'SpellRare',    s:plum2,       "NONE",  "undercurl" )
     endif
-call s:Hi( 'StatusLine',   s:aluminium3,  s:aluminium6,  "bold" )
+call s:Hi( 'StatusLine',   s:aluminium6,  s:aluminium3,  "bold,reverse" )
 call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
