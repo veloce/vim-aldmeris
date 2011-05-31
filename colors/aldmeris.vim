@@ -9,7 +9,6 @@
 " Original author: Paolo Borelli <pborelli@gnome.org>.
 "
 " TODO:
-"   - Javascript highlighting in html files
 "   - css highlighting
 "   - create a README
 "   - see to make a light theme based on tango
@@ -306,6 +305,7 @@ hi link htmlH3 Normal
 hi link htmlH4 Normal
 hi link htmlH5 Normal
 hi link htmlH6 Normal
+hi link Javascript Normal
 " }}}
 " Javascript colors {{{
 hi link javaScriptBraces normal
