@@ -197,7 +197,7 @@ call s:Hi( 'DiffChange',   s:aluminium5,  s:orange1,     "bold" )
 call s:Hi( 'DiffDelete',   s:aluminium5,  s:scarletred2, "bold" )
 call s:Hi( 'DiffText',     s:aluminium5,  s:skyblue1,    "bold" )
 call s:Hi( 'ErrorMsg',     s:scarletred2, s:aluminium1 )
-call s:Hi( 'VertSplit',    s:aluminium4,  s:aluminium5,  "bold" )
+call s:Hi( 'VertSplit',    s:aluminium4,  s:aluminium6,  "bold" )
 call s:Hi( 'Folded',       "NONE",        s:aluminium3,  "bold,underline" )
 " FoldColumn	'foldcolumn'
 " SignColumn	column where |signs| are displayed
