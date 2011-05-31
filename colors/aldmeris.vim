@@ -186,6 +186,29 @@ elseif &t_Co == 256
     let s:black       = "16"
 endif
 " }}}
+" Syntax groups colors (:help group-name) {{{
+" ---------------------------------------
+call s:Hi( 'Normal',       s:aluminium6,  s:aluminium2 )
+call s:Hi( 'Comment',      "NONE",        s:aluminium4, "italic" )
+call s:Hi( 'Constant',     "NONE",        s:butter2 )
+call s:Hi( 'Boolean',      "NONE",        s:orange3 )
+call s:Hi( 'Identifier',   "NONE",        s:skyblue1,   "NONE" )
+call s:Hi( 'Statement',    "NONE",        s:aluminium1, "bold" )
+call s:Hi( 'PreProc',      "NONE",        s:plum1 )
+call s:Hi( 'Type',         "NONE",        s:chameleon1, "bold" )
+call s:Hi( 'Special',      "NONE",        s:orange1 )
+call s:Hi( 'SpecialChar',  "NONE",        s:orange3 )
+call s:Hi( 'Underlined',   "NONE",        s:skyblue1,   "underline" )
+call s:Hi( 'Error',        s:scarletred2, s:aluminium1, "bold" )
+call s:Hi( 'Todo',         s:butter1,     s:aluminium4, "bold" )
+
+" italic is a special case
+if !has("gui_running")
+    if (index(s:terms_italic, &term) < 0)
+        hi Comment cterm=NONE
+    endif
+endif
+" }}}
 " Highlight default (:help highlight-default) {{{
 " -------------------------------------------
 " ColorColumn	used for the columns set with 'colorcolumn'
@@ -210,7 +233,6 @@ call s:Hi( 'MatchParen',   s:plum1,       s:aluminium1 )
 " ModeMsg		'showmode' message (e.g. , "-- INSERT --")
 call s:Hi( 'MoreMsg',      "NONE",        s:chameleon1,  "bold" )
 call s:Hi( 'NonText',      "NONE",        s:aluminium5 )
-call s:Hi( 'Normal',       s:aluminium6,  s:aluminium2 )
 call s:Hi( 'Pmenu',        s:black,       s:aluminium3 )
 call s:Hi( 'PmenuSel',     s:aluminium5,  s:aluminium1 )
 call s:Hi( 'PmenuSbar',    s:aluminium5,  s:aluminium5 )
@@ -239,28 +261,6 @@ call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 call s:Hi( 'WarningMsg',   "NONE",        s:scarletred2 )
 call s:Hi( 'WildMenu',     s:butter2,     s:aluminium6  )
-" }}}
-" Syntax groups colors (:help group-name) {{{
-" ---------------------------------------
-call s:Hi( 'Comment',      "NONE",        s:aluminium4, "italic" )
-call s:Hi( 'Constant',     "NONE",        s:butter2 )
-call s:Hi( 'Boolean',      "NONE",        s:orange3 )
-call s:Hi( 'Identifier',   "NONE",        s:skyblue1,   "NONE" )
-call s:Hi( 'Statement',    "NONE",        s:aluminium1, "bold" )
-call s:Hi( 'PreProc',      "NONE",        s:plum1 )
-call s:Hi( 'Type',         "NONE",        s:chameleon1, "bold" )
-call s:Hi( 'Special',      "NONE",        s:orange1 )
-call s:Hi( 'SpecialChar',  "NONE",        s:orange3 )
-call s:Hi( 'Underlined',   "NONE",        s:skyblue1,   "underline" )
-call s:Hi( 'Error',        s:scarletred2, s:aluminium1, "bold" )
-call s:Hi( 'Todo',         s:butter1,     s:aluminium4, "bold" )
-
-" italic is a special case
-if !has("gui_running")
-    if (index(s:terms_italic, &term) < 0)
-        hi Comment cterm=NONE
-    endif
-endif
 " }}}
 " gitcommit colors {{{
 " ----------------
