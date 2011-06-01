@@ -184,6 +184,27 @@ elseif &t_Co == 256
     let s:aluminium5  = "240"
     let s:aluminium6  = "236"
     let s:black       = "16"
+else
+    let s:butter1     = "LightYellow"
+    let s:butter2     = "Yellow"
+    let s:chameleon1  = "LightGreen"
+    let s:chameleon3  = "DarkGreen"
+    let s:orange1     = "LightCyan"
+    let s:orange2     = "Cyan"
+    let s:orange3     = "DarkCyan"
+    let s:skyblue1    = "LightBlue"
+    let s:skyblue2    = "Blue"
+    let s:plum1       = "LightMagenta"
+    let s:plum2       = "Magenta"
+    let s:scarletred1 = "LightRed"
+    let s:scarletred2 = "Red"
+    let s:aluminium1  = "White"
+    let s:aluminium2  = "White"
+    let s:aluminium3  = "LightGray"
+    let s:aluminium4  = "Gray"
+    let s:aluminium5  = "DarkGray"
+    let s:aluminium6  = "DarkGrey"
+    let s:black       = "Black"
 endif
 " }}}
 " Syntax groups colors (:help group-name) {{{
