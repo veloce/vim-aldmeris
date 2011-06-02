@@ -280,7 +280,7 @@ call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 call s:Hi( 'Title',        "bg",          s:butter1,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
-call s:Hi( 'WarningMsg',   "bg",          s:scarletred2 )
+call s:Hi( 'WarningMsg',   "bg",          s:scarletred1 )
 call s:Hi( 'WildMenu',     s:butter2,     s:aluminium6  )
 " }}}
 " gitcommit colors {{{
