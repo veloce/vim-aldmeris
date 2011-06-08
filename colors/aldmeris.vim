@@ -275,7 +275,7 @@ call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
-call s:Hi( 'Title',        "bg",          s:butter1,     "bold" )
+call s:Hi( 'Title',        "bg",          s:orange1,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 call s:Hi( 'WarningMsg',   "bg",          s:scarletred1 )
@@ -309,21 +309,15 @@ call s:Hi( 'diffRemoved',             "NONE", s:scarletred1 )
 hi link xmlTag Identifier
 hi link xmlEndTag xmlTag
 hi link xmlTagName xmlTag
-hi link xmlString String
 " }}}
 "HTML Colors {{{
 "-----------
 hi link htmlTag xmlTag
-hi link htmlTagName xmlTag
-hi link htmlSpecialTagName xmlTag
+hi link htmlEndTag xmlEndTag
+hi link htmlTagName xmlTagName
+hi link htmlSpecialTagName xmlTagName
 hi link htmlString xmlString
 hi link htmlSpecialChar PreProc
-hi link htmlH1 Normal
-hi link htmlH2 Normal
-hi link htmlH3 Normal
-hi link htmlH4 Normal
-hi link htmlH5 Normal
-hi link htmlH6 Normal
 hi link Javascript Normal
 " }}}
 " Javascript colors {{{
