@@ -309,6 +309,7 @@ call s:Hi( 'diffRemoved',             "NONE", s:scarletred1 )
 hi link xmlTag Identifier
 hi link xmlEndTag xmlTag
 hi link xmlTagName xmlTag
+hi link xmlString String
 " }}}
 "HTML Colors {{{
 "-----------
