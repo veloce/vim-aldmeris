@@ -82,7 +82,19 @@
 " aluminium5   #555753   240 #585858
 " aluminium6   #2e3436   236 #303030
 " }}}
-" Custom highlighting function {{{
+" Colorscheme initialization {{{
+" --------------------------
+if has("gui_running")
+    set background=dark
+endif
+hi clear
+if exists("syntax_on")
+   syntax reset
+endif
+
+let g:colors_name = "aldmeris"
+" }}}
+" Custom highlight function {{{
 if has("gui_running")
     let s:hi_args = ['guibg', 'guifg', 'gui', 'guisp']
 else
@@ -95,16 +107,6 @@ function! s:Hi(name, ...)
     endfor
     exe command
 endfunc
-" }}}
-" Colorscheme initialization {{{
-" --------------------------
-set background=dark
-hi clear
-if exists("syntax_on")
-   syntax reset
-endif
-
-let g:colors_name = "aldmeris"
 " }}}
 " Default options and env settings {{{
 " --------------------------------
