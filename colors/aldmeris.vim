@@ -275,7 +275,7 @@ call s:Hi( 'StatusLineNC', s:aluminium4,  s:aluminium6,  "NONE" )
 " TabLine		tab pages line, not active tab page label
 " TabLineFill	tab pages line, where there are no labels
 " TabLineSel	tab pages line, active tab page label
-call s:Hi( 'Title',        "bg",          s:orange1,     "bold" )
+call s:Hi( 'Title',        "bg",          s:butter1,     "bold" )
 call s:Hi( 'Visual',       s:aluminium4,  s:aluminium1 )
 " VisualNOS	Visual mode selection when vim is "Not Owning the Selection".
 call s:Hi( 'WarningMsg',   "bg",          s:scarletred1 )
