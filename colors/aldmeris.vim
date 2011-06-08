@@ -8,10 +8,6 @@
 " The original theme is part of GtkSourceView.
 " Original author: Paolo Borelli <pborelli@gnome.org>.
 "
-" TODO:
-"   - refactor color variables with a dict?
-"   - css highlighting
-"   - see to make a light theme based on tango
 
 " Usage {{{
 " ------------
@@ -353,9 +349,11 @@ hi link phpNumber Number
 " ----------
 hi link cssIdentifier Normal
 hi link cssClassName Normal
+hi link cssTagName Normal
 hi link cssBraces Normal
 hi link cssRenderProp Keyword
 hi link cssBoxProp cssRenderProp
+hi link cssUIProp cssRenderProp
 hi link cssColorProp cssRenderProp
 hi link cssFontProp cssRenderProp
 hi link cssTextProp cssRenderProp
