@@ -329,13 +329,6 @@ hi link rubyDefine Keyword
 " Javascript colors {{{
 hi link javaScriptBraces normal
 " }}}
-" Jinja colors {{{
-" ------------
-hi link jinjaTagDelim Keyword
-hi link jinjaVarDelim jinjaTagDelim
-hi link jinjaFilter Function
-hi link jinjaString xmlString
-" }}}
 " PHP Colors {{{
 " ----------
 hi link phpVarSelector Identifier
