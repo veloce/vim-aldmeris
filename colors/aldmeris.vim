@@ -321,6 +321,11 @@ hi link htmlString xmlString
 hi link htmlSpecialChar PreProc
 hi link Javascript Normal
 " }}}
+" Ruby colors {{{
+" -----------
+hi link rubyClass Keyword
+hi link rubyDefine Keyword
+"  }}}
 " Javascript colors {{{
 hi link javaScriptBraces normal
 " }}}
