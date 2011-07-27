@@ -1,10 +1,10 @@
 " Vim color scheme
 " Name:         aldmeris.vim
 " Maintainer:   Vincent Velociter <vincent.velociter@gmail.com>
+" Version:      1.0
 " Url:          https://github.com/veloce/vim-aldmeris
-" License:      LGPL
 
-" Aldmeris is a port of the gedit oblivion theme for vim.
+" Aldmeris is based on the gedit oblivion theme for vim.
 " The original theme is part of GtkSourceView.
 " Original author: Paolo Borelli <pborelli@gnome.org>.
 "
