@@ -18,4 +18,4 @@ Ruby example on a terminal:
 
 Fugitive commit example:
 
-![Fugitive commit](https://github.com/veloce/vim-aldmeris/raw/master/screenshots/aldmeris-gstatus.png "Fugitive commit)
+![Fugitive commit](https://github.com/veloce/vim-aldmeris/raw/master/screenshots/aldmeris-gstatus.png "Fugitive commit")
