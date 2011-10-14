@@ -1,7 +1,7 @@
 " Vim color scheme
 " Name:         aldmeris.vim
 " Maintainer:   Vincent Velociter <vincent.velociter@gmail.com>
-" Version:      1.0
+" Version:      1.1
 " Url:          https://github.com/veloce/vim-aldmeris
 
 " Aldmeris is based on the gedit oblivion theme for vim.
