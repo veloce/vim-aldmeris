@@ -210,7 +210,7 @@ else
     let s:aluminium6  = "DarkGrey"
     let s:black       = "Black"
 endif
-if (!has("gui_running") || g:aldmeris_transparent == 1)
+if (!has("gui_running") && g:aldmeris_transparent == 1)
     let s:aluminium6 = "NONE"
 endif
 " }}}
