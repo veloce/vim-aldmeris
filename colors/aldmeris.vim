@@ -13,6 +13,11 @@
 " ------------
 " NOTE FOR TERMINAL USERS:
 " -----------------------
+" If you wish to use aldmeris with a transparent terminal, you can set this
+" option in your .vimrc:
+"
+"   let g:aldmeris_transparent = 1
+"
 " The colorscheme is compatible with terminals that support 256 colors. See:
 "
 "   http://vim.wikia.com/wiki/256_colors_in_vim
