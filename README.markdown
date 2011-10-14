@@ -30,7 +30,7 @@ If your terminal uses the tango palette as system colors, please add this to you
 
 If you wish to use a transparent terminal, you can put this option in your vimrc:
 
-    let g:aldmeris_transparent
+    let g:aldmeris_transparent = 1
 
 ## Screenshots
 
