@@ -24,7 +24,7 @@ Try it out with
 
 If you want to make it the default, add that command to your vimrc or gvimrc. 
 
-If you use it with a terminal that uses the tango palette as system colors, add this to your vimrc to obtain best results: 
+If your terminal uses the tango palette as system colors, please add this to your vimrc to obtain best results (check `aldmeris.vim` to see that palette): 
 
     let g:aldmeris_termcolors = "tango"
 
