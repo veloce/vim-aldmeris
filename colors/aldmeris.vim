@@ -370,4 +370,5 @@ hi link cssGeneratedContentProp cssRenderProp
 hi link cssValueLength Boolean
 hi link cssPseudoClassId Identifier
 " }}}
-" vim:foldmethod=marker
+
+" vim: set fdm=marker:
