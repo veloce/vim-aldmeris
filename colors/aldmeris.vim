@@ -301,13 +301,13 @@ hi link gitcommitHeader    gitcommitComment
 hi link gitcommitUntracked gitcommitComment
 hi link gitcommitDiscarded gitcommitComment
 hi link gitcommitSelected  gitcommitComment
-call s:Hi( 'gitcommitDiscardedType',  "NONE", s:scarletred1 )
 call s:Hi( 'gitcommitSelectedType',   "NONE", s:chameleon1 )
-call s:Hi( 'gitcommitUnmergedType',   "NONE", s:butter1 )
-call s:Hi( 'gitcommitUntrackedFile',  "NONE", s:plum1,       "bold" )
-call s:Hi( 'gitcommitDiscardedFile',  "NONE", s:scarletred1, "bold" )
+call s:Hi( 'gitcommitDiscardedType',  "NONE", s:butter1 )
+call s:Hi( 'gitcommitUnmergedType',   "NONE", s:scarletred1 )
 call s:Hi( 'gitcommitSelectedFile',   "NONE", s:chameleon1,  "bold" )
-call s:Hi( 'gitcommitUnmergedFile',   "NONE", s:butter1,     "bold" )
+call s:Hi( 'gitcommitDiscardedFile',  "NONE", s:butter1,     "bold" )
+call s:Hi( 'gitcommitUnmergedFile',   "NONE", s:scarletred1, "bold" )
+call s:Hi( 'gitcommitUntrackedFile',  "NONE", s:plum1,       "bold" )
 " }}}
 " diff colors {{{
 hi link diffFile           Special
