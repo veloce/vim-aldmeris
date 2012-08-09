@@ -13,7 +13,7 @@ Features:
 
 ## Installation
 
-Downloard aldmeris.vim and install in ~/.vim/colors. You can also use [pathogen.vim][https://github.com/tpope/vim-pathogen]:
+Downloard aldmeris.vim and install in ~/.vim/colors. You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen):
 
     cd ~/.vim/bundle
     git clone git://github.com/veloce/vim-aldmeris.git
