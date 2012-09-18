@@ -7,27 +7,31 @@ Features:
 
 * tango colors palette
 * support 256 colors for terminal emulators
-* option to use terminal base colors in the colorscheme: by setting term colors with a tango palette, the result is very close to the gui version
+* option to use terminal base colors in the colorscheme: by setting term colors
+with a tango palette, the result is very close to the gui version
 * support terminal transparency
-* tpope's fugitive integration: well recognizable colors for the output of :Gstatus, and for git objects.
+* tpope's fugitive integration: well recognizable colors for the output of
+:Gstatus, and for git objects.
 
 ## Installation
 
-Downloard aldmeris.vim and install in ~/.vim/colors. You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen):
+Downloard aldmeris.vim and install in ~/.vim/colors. You can also use
+[pathogen.vim](https://github.com/tpope/vim-pathogen):
 
     cd ~/.vim/bundle
     git clone git://github.com/veloce/vim-aldmeris.git
 
-Try it out with 
+Try it out with
 
-    :colorscheme aldmeris 
+    :colorscheme aldmeris
 
-If you want to make it the default, add that command to your vimrc or gvimrc. 
+If you want to make it the default, add that command to your vimrc or gvimrc.
 
-If your terminal uses the tango palette as system colors, please add this to your vimrc to obtain best results: 
+If your terminal uses the tango palette as system colors, please add this to
+your vimrc to obtain best results:
 
     let g:aldmeris_termcolors = "tango"
-    
+
 Here is the tango palette to put in a `.Xresources` file:
 
     ! Black
@@ -55,7 +59,8 @@ Here is the tango palette to put in a `.Xresources` file:
     *color7:  #D3D7CF
     *color15: #EEEEEC
 
-If you wish to use a transparent terminal, you can put this option in your vimrc:
+If you wish to use a transparent terminal, you can put this option in your
+vimrc:
 
     let g:aldmeris_transparent = 1
 
@@ -63,9 +68,11 @@ If you wish to use a transparent terminal, you can put this option in your vimrc
 
 Ruby example on a terminal:
 
-![Ruby in terminal](https://github.com/veloce/vim-aldmeris/raw/master/screenshots/aldmeris-small.png "Ruby in terminal")
+![Ruby in terminal](https://github.com/veloce/vim-aldmeris/raw/master/
+screenshots/aldmeris-small.png "Ruby in terminal")
 
 Fugitive commit example:
 
-![Fugitive commit](https://github.com/veloce/vim-aldmeris/raw/master/screenshots/aldmeris-gstatus.png "Fugitive commit")
+![Fugitive commit](https://github.com/veloce/vim-aldmeris/raw/master/
+screenshots/aldmeris-gstatus.png "Fugitive commit")
 
