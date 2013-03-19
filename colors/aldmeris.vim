@@ -338,10 +338,10 @@ hi link rubyClass Keyword
 hi link rubyDefine Keyword
 "  }}}
 " Javascript colors {{{
-hi link javaScriptBraces normal
 " following syntax from https://github.com/pangloss/vim-javascript
-hi link javaScriptLabel Identifier
-hi link javaScriptThis Identifier
+hi link jsBraces normal
+hi link jsLabel Identifier
+hi link jsThis Identifier
 " }}}
 " PHP Colors {{{
 " ----------
