@@ -342,6 +342,7 @@ hi link rubyDefine Keyword
 hi link jsBraces normal
 hi link jsLabel Identifier
 hi link jsThis Identifier
+hi link jsReturn Statement
 " }}}
 " PHP Colors {{{
 " ----------
