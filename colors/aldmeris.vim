@@ -241,7 +241,7 @@ endif
 " }}}
 " Highlight default (:help highlight-default) {{{
 " -------------------------------------------
-call s:Hi( 'ColorColumn',   s:plum2,        "NONE" )
+call s:Hi( 'ColorColumn',   s:aluminium5,   "NONE" )
 " Conceal		placeholder characters substituted for concealed
 call s:Hi( 'Cursor',        s:aluminium2,   s:black )
 " CursorIM	like Cursor, but used when in IME mode
