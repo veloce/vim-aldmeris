@@ -68,11 +68,9 @@ vimrc:
 
 Ruby example on a terminal:
 
-![Ruby in terminal](https://github.com/veloce/vim-aldmeris/raw/master/
-screenshots/aldmeris-small.png "Ruby in terminal")
+![Ruby in terminal](./screenshots/aldmeris-small.png "Ruby in terminal")
 
 Fugitive commit example:
 
-![Fugitive commit](https://github.com/veloce/vim-aldmeris/raw/master/
-screenshots/aldmeris-gstatus.png "Fugitive commit")
+![Fugitive commit](./screenshots/aldmeris-gstatus.png "Fugitive commit")
 
